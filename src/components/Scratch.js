@@ -1,5 +1,7 @@
 import React  from 'react'
 import Scratchheader from './Scratchheader'
+import {Link} from 'react-router-dom'
+
 import { Grid, Image,  } from 'semantic-ui-react'
 import welcome_scratch from '../assets/welcome_scratch.png'
 import join_button_scratch from '../assets/join_button_scratch.png'
@@ -49,7 +51,9 @@ function Scratch() {
 
                 <Grid.Row>
                     <Grid.Column>
-                    <Image src={join_button_scratch} centered size='medium'/>
+                        <Link to="/home">
+                            <Image src={join_button_scratch} centered size='medium'/>
+                        </Link>
                     </Grid.Column>
                 </Grid.Row>
               

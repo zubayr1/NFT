@@ -1,0 +1,19 @@
+
+p.a {
+    font-style: normal;
+  }
+  
+  p.headerfont {
+    
+    font-family: 'Gloria Hallelujah';
+    color: antiquewhite;
+  }
+  
+  p.welcomefont {
+    
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    color: rgb(243, 240, 235);
+    font-weight: bold;
+    font-size: xxx-large;
+    
+  }

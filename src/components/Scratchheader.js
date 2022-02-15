@@ -1,5 +1,7 @@
 import React from 'react'
 import { Grid,Image } from 'semantic-ui-react'
+import {Link} from 'react-router-dom'
+
 import logo from '../assets/wasted_dodo_header.png'
 import discord from '../assets/discord.png'
 import rarible from '../assets/rarible.png'
@@ -12,9 +14,11 @@ function Scratchheader() {
 
       <Grid  padded>
     
-      <Grid.Row color={'#000000'} key={'#000000'} verticalAlign="middle"> 
+      <Grid.Row  verticalAlign="middle"> 
         <Grid.Column floated='left'  mobile={6} tablet={8} computer={4}>
-        <Image src={logo} size='medium'/>
+          <Link to="/">
+            <Image src={logo} size='medium'/>
+          </Link>
         </Grid.Column>
 
         <Grid.Column floated='right' mobile={10} tablet={8} computer={4}>  
@@ -26,11 +30,15 @@ function Scratchheader() {
                 </Grid.Column>
 
                 <Grid.Column mobile={5} tablet={5} computer={6}>
+                <a href="https://rarible.com/">
                     <Image src={rarible} size='tiny'/>
+                  </a>
                 </Grid.Column>
 
                 <Grid.Column mobile={7} tablet={7} computer={6}>
+                  <a href="https://opensea.io/">
                     <Image src={opensea} size='small'/>
+                  </a>
                 </Grid.Column>
 
             </Grid.Row>

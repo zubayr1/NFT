@@ -1,6 +1,7 @@
 import './App.css';
 import {BrowserRouter as Router, Routes , Route} from 'react-router-dom'
 import Scratch from './components/Scratch';
+import HomeDodo from './components/HomeDodo';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Router>
               <Routes >
                 <Route exact path="/" element={<Scratch/>}/>
-
+                <Route exact path="/home" element={<HomeDodo/>}/>
                            
                 
               </Routes >
