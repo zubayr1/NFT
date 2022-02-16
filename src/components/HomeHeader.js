@@ -8,7 +8,10 @@ import rarible from '../assets/rarible.png'
 import opensea from '../assets/opensea.png'
 
 import './fonts.css'
-function HomeHeader() {
+function HomeHeader({changeState}) {
+
+
+
   return (
     <div style={{marginLeft:'40px', marginRight:'40px'}}>
         
@@ -29,13 +32,16 @@ function HomeHeader() {
           <Grid>
               <Grid.Row columns={4} verticalAlign="middle">
                   <Grid.Column  tablet={4} computer={4} >
-                     <p class="headerfont">Home</p>
+                     
+                     <div onClick={() => changeState('home')}>
+                    <p class="headerfont">Home</p>
+                    </div>
                   </Grid.Column>
   
                   <Grid.Column  tablet={4} computer={4}>
-                  <a href="https://rarible.com/">
+                    <div onClick={() => changeState('gallery')}>
                     <p class="headerfont">Gallery</p>
-                    </a>
+                    </div>
                   </Grid.Column>
   
                   <Grid.Column  tablet={4} computer={4}>

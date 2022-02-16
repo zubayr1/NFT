@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
 import HomeHeader from './HomeHeader';
 import { Grid, GridRow, Image,Form } from 'semantic-ui-react'
 import welcome_message from '../assets/welcome_message.png'
@@ -13,10 +13,24 @@ import  './floating2.css'
 import  './appear_animation.css';
 import { enableBodyScroll } from 'body-scroll-lock';
 import DodoCarousol from './DodoCarousol';
+import Roadmap from './Roadmap';
 
 function HomeDodo() {
   enableBodyScroll(document)
   const [searchvalue, setSearchValue] = useState('')
+
+  const home = useRef(null)
+  const gallery = useRef(null)
+
+
+  const changeState = (childdata) => {
+    
+    if(childdata==='home')
+      home.current.scrollIntoView({ behavior: 'smooth' })
+    if(childdata==='gallery')
+      gallery.current.scrollIntoView({ behavior: 'smooth' }) 
+  }
+
 
   function handleSearch()
   {
@@ -25,9 +39,9 @@ function HomeDodo() {
 
   return (
     <div>
-      <HomeHeader/>
+      <HomeHeader changeState={changeState}/>
 
-      <div style={{marginLeft:'40px', marginRight:'40px', marginTop:'100px'}}>
+      <div style={{marginLeft:'40px', marginRight:'40px', marginTop:'100px'}} ref={home}>
       <Grid>
       <Grid.Column mobile={9} tablet={8} computer={8} floated='left'>
 
@@ -113,11 +127,17 @@ function HomeDodo() {
 
     <div>
 
-      <DodoStory/>
+      <DodoStory/>      
+      </div>
 
+      <div ref={gallery}>
       <DodoCarousol/>
       </div>
 
+      <div>
+        <Roadmap />
+      </div>
+      
     </div>
   )
 }
