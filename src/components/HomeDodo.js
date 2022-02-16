@@ -4,7 +4,6 @@ import { Grid, GridRow, Image,Form } from 'semantic-ui-react'
 import welcome_message from '../assets/welcome_message.png'
 import corrected_welcome from '../assets/corrected_welcome.png'
 import dodo1_scratch from '../assets/dodo1_scratch.png'
-import cross from '../assets/cross.png'
 import sorry from '../assets/sorry.png'
 import dodo_intro from '../assets/dodo_intro.png'
 import search_btn from '../assets/search_btn.png'
@@ -14,6 +13,8 @@ import  './appear_animation.css';
 import { enableBodyScroll } from 'body-scroll-lock';
 import DodoCarousol from './DodoCarousol';
 import Roadmap from './Roadmap';
+import BuyDodo from './BuyDodo';
+import Footer from './Footer';
 
 function HomeDodo() {
   enableBodyScroll(document)
@@ -49,7 +50,6 @@ function HomeDodo() {
           <GridRow>
           <div>
             <Image src={welcome_message} size='huge' />
-            <Image src={cross} size='big' />
           </div>
 
           </GridRow>
@@ -134,8 +134,14 @@ function HomeDodo() {
       <DodoCarousol/>
       </div>
 
+      <BuyDodo/>
+
       <div>
         <Roadmap />
+      </div>
+
+      <div>
+        <Footer/>
       </div>
       
     </div>

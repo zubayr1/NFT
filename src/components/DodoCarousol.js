@@ -41,7 +41,7 @@ function DodoCarousol() {
       <Grid.Column  mobile={7} tablet={3} computer={3}>
       <Grid centered >
         <Grid.Row>
-      <Image src={src+'/'+ INDEX1+'.png'} size='medium'/>
+      <Image src={src+'/'+ INDEX1+'.png'} size='medium' rounded/>
       </Grid.Row>
 
       <Grid.Row>
@@ -55,7 +55,7 @@ function DodoCarousol() {
       <Grid.Column only='tablet computer' tablet={3} computer={3}>
       <Grid centered >
         <Grid.Row>
-      <Image src={src+'/'+ INDEX2+'.png'} size='medium'/>
+      <Image src={src+'/'+ INDEX2+'.png'} size='medium' rounded/>
       </Grid.Row>
 
       <Grid.Row>
@@ -69,7 +69,7 @@ function DodoCarousol() {
       <Grid.Column only='tablet computer' tablet={3} computer={3}>
       <Grid centered >
         <Grid.Row>
-      <Image src={src+'/'+ INDEX3+'.png'} size='medium'/>
+      <Image src={src+'/'+ INDEX3+'.png'} size='medium' rounded/>
       </Grid.Row>
 
       <Grid.Row>
@@ -83,7 +83,7 @@ function DodoCarousol() {
       <Grid.Column mobile={7} tablet={3} computer={3}>
       <Grid centered >
         <Grid.Row>
-      <Image src={src+'/'+ INDEX4+'.png'} size='medium'/>
+      <Image src={src+'/'+ INDEX4+'.png'} size='medium' rounded/>
       </Grid.Row>
 
       <Grid.Row>
@@ -96,7 +96,7 @@ function DodoCarousol() {
       <Grid.Column  only='tablet computer' tablet={3} computer={3}>
       <Grid centered >
         <Grid.Row>
-      <Image src={src+'/'+ INDEX5+'.png'} size='medium'/>
+      <Image src={src+'/'+ INDEX5+'.png'} size='medium' rounded/>
       </Grid.Row>
 
       <Grid.Row>
