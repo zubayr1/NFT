@@ -9,7 +9,8 @@ import opensea from '../assets/opensea.png'
 
 function Scratchheader() {
   return (
-    <div style={{marginLeft:'40px', marginRight:'40px'}}>
+    <div style={{ backgroundColor:'black'}}>
+    <div style={{marginLeft:'40px', marginRight:'40px',}}>
         
 
       <Grid  padded>
@@ -53,6 +54,8 @@ function Scratchheader() {
   </Grid>
 
       
+    </div>
+
     </div>
   )
 }

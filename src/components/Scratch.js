@@ -15,7 +15,7 @@ import  './floating1.css'
 import  './floating2.css'
 import  './floating3.css'
 import  './floating4.css'
-
+import { disableBodyScroll } from 'body-scroll-lock';
 import useSound from 'use-sound';
 import boopSfx from '../assets/bg_music.mp3';
 
@@ -25,14 +25,16 @@ function Scratch() {
     
     const [play, { stop }] = useSound(boopSfx);
 
-    
+    disableBodyScroll(document)
+
 
   return (
+      <div style={{backgroundColor:'black'}}>
     <div >
         <Scratchheader/>
        
-        
-        <div style={{marginLeft:'40px', marginRight:'40px', marginTop:'100px'}}>
+        <div style={{backgroundColor:'black'}}>
+        <div style={{marginLeft:'40px', marginRight:'40px', marginTop:'100px',}} >
             <Grid >
                 <Grid.Row>
                     <Grid.Column>
@@ -61,7 +63,7 @@ function Scratch() {
 
             </Grid>
         </div>
-
+        </div>
         <div class="ocean">
         <div class="bubble bubble--1"></div>
         <div class="bubble bubble--2"></div>
@@ -127,7 +129,7 @@ function Scratch() {
         </div>
 
         
-
+        </div>
 
     </div>
   )

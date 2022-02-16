@@ -1,20 +1,9 @@
-body {
+/* body {
     margin: 0;
     overflow: hidden;
   }
-  #octocat {
-    height: 300px;
-    width: 200px;
-    background: url(https://codinhood.com/static/9a146dac647e7129fa173acc0b0d437f/299c1/octocat.png) left center;
-    animation: animateSprite 15s steps(1) infinite, swim 15s ease-in-out infinite;
-    position: absolute;
-    right: -200px;
-    top: 50%;
-    margin-top: -150px;
-    z-index: 100;
-  }
-  
-  
+ 
+   */
   @keyframes animateSprite {
     0% {
       background-position: -600px; /* Starting position moving left sprite */

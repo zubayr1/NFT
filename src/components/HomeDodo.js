@@ -8,12 +8,14 @@ import cross from '../assets/cross.png'
 import sorry from '../assets/sorry.png'
 import dodo_intro from '../assets/dodo_intro.png'
 import search_btn from '../assets/search_btn.png'
-
+import DodoStory from './DodoStory';
 import  './floating2.css'
 import  './appear_animation.css';
+import { enableBodyScroll } from 'body-scroll-lock';
+import DodoCarousol from './DodoCarousol';
 
 function HomeDodo() {
-
+  enableBodyScroll(document)
   const [searchvalue, setSearchValue] = useState('')
 
   function handleSearch()
@@ -76,9 +78,9 @@ function HomeDodo() {
                       </div>
                   </Grid.Column>
 
-                  <Grid.Column mobile={4} tablet={4} computer={3}>
+                  <Grid.Column mobile={3} tablet={3} computer={3}>
                     <div  onClick={handleSearch}>
-                    <Image src={search_btn} size='tiny'/>
+                    <Image src={search_btn} size='mini'/>
                     </div>
                   </Grid.Column>
                   
@@ -109,6 +111,12 @@ function HomeDodo() {
 
     </div>
 
+    <div>
+
+      <DodoStory/>
+
+      <DodoCarousol/>
+      </div>
 
     </div>
   )
