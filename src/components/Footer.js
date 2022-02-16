@@ -16,7 +16,7 @@ function Footer() {
                 Get In Touch</p>
 
                 <p class="FuturaFont" style={{color:'#FE560C', fontSize:'20px', fontWeight:'bold'}}>
-                Have an idea? We'd love to hear it</p>
+                Have a design? We'd love to see it</p>
 
                 <Button size='large' style={{color:'#0F0F0F', backgroundColor:'#FE560C'}}>React Out to Us</Button>
                 </Grid.Column>
