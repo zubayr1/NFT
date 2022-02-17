@@ -138,10 +138,10 @@ export default function Roadmap() {
     );
   };
 
-  const [message, setMessage] = useState("");
+  
 
   const onCallback = () => {
-    console.log("awesome");
+    
   };
 
   return (
@@ -157,7 +157,7 @@ export default function Roadmap() {
           />
         )}
       />
-      <div className="stub2">{message}</div>
+      <div className="stub2"><div></div></div>
     </div>
   );
 }
