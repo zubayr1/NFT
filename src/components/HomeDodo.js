@@ -22,7 +22,7 @@ function HomeDodo() {
 
   const home = useRef(null)
   const gallery = useRef(null)
-
+  const roadmap = useRef(null)
 
   const changeState = (childdata) => {
     
@@ -30,6 +30,8 @@ function HomeDodo() {
       home.current.scrollIntoView({ behavior: 'smooth' })
     if(childdata==='gallery')
       gallery.current.scrollIntoView({ behavior: 'smooth' }) 
+    if(childdata==='roadmap')
+      roadmap.current.scrollIntoView({ behavior: 'smooth' }) 
   }
 
 
@@ -134,7 +136,7 @@ function HomeDodo() {
       <DodoCarousol/>
       </div>
 
-      <div style={{marginBottom:'20px', marginTop:'30px'}}>
+      <div style={{marginBottom:'20px', marginTop:'30px'}} ref={roadmap}>
         <Roadmap />
       </div>
 

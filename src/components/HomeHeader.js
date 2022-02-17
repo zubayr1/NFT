@@ -45,9 +45,9 @@ function HomeHeader({changeState}) {
                   </Grid.Column>
   
                   <Grid.Column  tablet={4} computer={4}>
-                    <a href="https://opensea.io/">
+                  <div onClick={() => changeState('roadmap')}>
                     <p class="headerfont">Roadmap</p>
-                    </a>
+                    </div>
                   </Grid.Column>
 
                   <Grid.Column  tablet={4} computer={4}>

@@ -30,28 +30,28 @@ export default function Roadmap() {
     const circle6 = useRef(null);
 
     const someCallback1 = () => {
-      setMessage1("   - You can create your own design. If the editorial team likes it, it will be auctioned in Drunk Dodo page and will be promoted via all Drunk Dodo social media. You keep 90% royalty.");
+      setMessage1("   15%- You can create your own design. If the editorial team likes it, it will be auctioned in Drunk Dodo page and will be promoted via all Drunk Dodo social media. You keep 90% royalty.");
       callback();
     };
 
     const someCallback2 = () => {
-      setMessage2("   - We will start our own events in Metaverse where all the memebrs will play games. Winners will be awarded with 5 Ethers. Remember, there will be multiple such events throughout!");
+      setMessage2("   30%- We will start our own events in Metaverse where all the memebrs will play games. Winners will be awarded with 5 Ethers. Remember, there will be multiple such events throughout!");
     };
 
     const someCallback3 = () => {
-      setMessage3("   - 100,000$ will be donated for Children welfare. It will be discussed with the most active members of the Club");
+      setMessage3("   45%- 100,000$ will be donated for Children welfare. It will be discussed with the most active members of the Club");
     };
 
     const someCallback4 = () => {
-      setMessage4("   - Live your wildest dreams!: Attend the wildest drunk parties of Dodos in the Metaverse. Long nights of party and poker and lets bring Vegas in Metaverse!");
+      setMessage4("   60%- Live your wildest dreams!: Attend the wildest drunk parties of Dodos in the Metaverse. Long nights of party and poker and lets bring Vegas in Metaverse!");
     };
 
     const someCallback5 = () => {
-      setMessage5("   - Mythical performance in the Metaverse: Just imagine. There are flying mountains and sky kissing trees. A place populated by mythical creatures. And your favourite popstar is performing there in our unique place. Club members will be directly invited. ");
+      setMessage5("   80%- Mythical performance in the Metaverse: Just imagine. There are flying mountains and sky kissing trees. A place populated by mythical creatures. And your favourite popstar is performing there in our unique place. Club members will be directly invited. ");
     };
 
     const someCallback6 = () => {
-      setMessage6("    - Drunk Dodos is a family, always: As the club grows, all the members will be invited to our next projects, and members will be collaborated for their own projects in the Metaverse. ");
+      setMessage6("   100%- Drunk Dodos is a family, always: As the club grows, all the members will be invited to our next projects, and members will be collaborated for their own projects in the Metaverse. ");
     };
 
     useEffect(() => {
@@ -86,7 +86,6 @@ export default function Roadmap() {
         <div id="timeline1" ref={timeline1} className="timeline" />
         <div className="circleWrapper">
           <div id="circle1" ref={circle1} className="circle">
-            15%
           </div>
           <div className="message" style={{color:'white'}}>{message1}</div>
         </div>
@@ -94,7 +93,6 @@ export default function Roadmap() {
         <div id="timeline2" ref={timeline2} className="timeline" />
         <div className="circleWrapper">
           <div id="circle2" ref={circle2} className="circle">
-            30%
           </div>
           <div className="message" style={{color:'white'}}>{message2}</div>
         </div>
@@ -102,7 +100,6 @@ export default function Roadmap() {
         <div id="timeline3" ref={timeline3} className="timeline" />
         <div className="circleWrapper">
           <div id="circle3" ref={circle3} className="circle">
-            45%
           </div>
           <div className="message" style={{color:'white'}}>{message3}</div>
         </div>
@@ -110,7 +107,6 @@ export default function Roadmap() {
         <div id="timeline4" ref={timeline4} className="timeline" />
         <div className="circleWrapper">
           <div id="circle4" ref={circle4} className="circle">
-            60%
           </div>
           <div className="message" style={{color:'white'}}>{message4}</div>
         </div>
@@ -118,7 +114,6 @@ export default function Roadmap() {
         <div id="timeline5" ref={timeline5} className="timeline" />
         <div className="circleWrapper">
           <div id="circle5" ref={circle5} className="circle">
-            80%
           </div>
           <div className="message" style={{color:'white'}}>{message5}</div>
         </div>
@@ -126,7 +121,6 @@ export default function Roadmap() {
         <div id="timeline6" ref={timeline6} className="timeline" />
         <div className="circleWrapper">
           <div id="circle6" ref={circle6} className="circle">
-            100%
           </div>
           <div className="message" style={{color:'white'}}>{message6}</div>
         </div>
