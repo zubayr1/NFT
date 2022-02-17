@@ -67,7 +67,7 @@ export default function Roadmap() {
       setObserver(circle4.current, someCallback4);
       setObserver(circle5.current, someCallback5);
       setObserver(circle6.current, someCallback6);
-    }, []);
+    },);
 
     return (
       <div>
