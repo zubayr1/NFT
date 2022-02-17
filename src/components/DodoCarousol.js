@@ -15,10 +15,10 @@ function DodoCarousol() {
   const INDEX5 = INDEX1 +4;
 
   return (
-    <div>
+    <div style={{backgroundColor:'#0f0f0f', paddingBottom:'20px'}}>
         <Grid>
             <Grid.Row centered>
-        <div style={{marginLeft:'40px', marginRight:'40px', marginTop:"40px",}}>
+        <div style={{marginLeft:'40px', marginRight:'40px', marginTop:"20px",}}>
              <Image src={whats_in_dodo_club} centered size='huge' />
              
         </div>

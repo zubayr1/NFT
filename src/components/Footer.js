@@ -8,7 +8,7 @@ import discord from '../assets/discord.png'
 function Footer() {
   return (
     <div style={{backgroundColor:'rgba(254, 86, 12, 0.19)'}}>
-        <div style={{marginTop:'10px', marginLeft:'30px', marginRight:'30px'}}>
+        <div style={{marginTop:'30px', marginLeft:'30px', marginRight:'30px'}}>
             
             <Grid  columns={2}>
                 <Grid.Column mobile={8} tablet={6} computer={4} floated='left'>

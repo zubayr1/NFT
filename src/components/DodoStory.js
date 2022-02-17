@@ -7,7 +7,7 @@ import  './floating3.css'
 function DodoStory() {
   return (
     <div style = {{ backgroundColor:"black"}}>
-      <div style = {{marginTop:'20px'}}>
+      <div style = {{marginTop:'20px', paddingBottom:'30px'}}>
         <Grid style={{marginLeft:'40px', marginRight:'40px', marginTop:'10px'}}>
             <Grid.Column mobile={8} tablet={4} computer={4} floated='left'>
             <div class="avatar3">

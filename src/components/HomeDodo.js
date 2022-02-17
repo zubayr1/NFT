@@ -134,11 +134,15 @@ function HomeDodo() {
       <DodoCarousol/>
       </div>
 
-      <BuyDodo/>
-
-      <div>
+      <div style={{marginBottom:'20px', marginTop:'30px'}}>
         <Roadmap />
       </div>
+
+      <div style={{marginBottom:'20px', marginTop:'60px'}}>
+      <BuyDodo/>
+      </div>
+
+      
 
       <div>
         <Footer/>
