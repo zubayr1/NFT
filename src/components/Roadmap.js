@@ -70,7 +70,7 @@ export default function Roadmap() {
     },);
 
     return (
-      <div style={{overflowX:'hidden'}}>
+      <div>
         <p class="FuturaFont" style={{color:'#FE560C', fontSize:'80px', fontWeight:'bolder'}}>
             Dodo Roadmap
             </p>
