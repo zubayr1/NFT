@@ -71,7 +71,7 @@ export default function Roadmap() {
 
     return (
       <div>
-        <p class="FuturaFont" style={{color:'#FE560C', fontSize:'100px', fontWeight:'bolder'}}>
+        <p class="FuturaFont" style={{color:'#FE560C', fontSize:'80px', fontWeight:'bolder'}}>
             Dodo Roadmap
             </p>
           <div style={{marginLeft:'40px', marginRight:'20px'}}>
