@@ -51,9 +51,7 @@ function HomeHeader({changeState}) {
                   </Grid.Column>
 
                   <Grid.Column  tablet={4} computer={4}>
-                    <a href="https://opensea.io/">
                     <p class="headerfont">Team</p>
-                    </a>
                   </Grid.Column>
   
               </Grid.Row>
@@ -69,7 +67,9 @@ function HomeHeader({changeState}) {
           <Grid>
               <Grid.Row columns={3} verticalAlign="middle">
                   <Grid.Column only='tablet computer' tablet={4} computer={4} >
+                    <a href='https://discord.gg/aug6ttSW'>
                       <Image src={discord} size='mini'/>
+                    </a>
                   </Grid.Column>
   
                   <Grid.Column mobile={7} tablet={4} computer={4}>

@@ -15,6 +15,7 @@ import DodoCarousol from './DodoCarousol';
 import Roadmap from './Roadmap';
 import BuyDodo from './BuyDodo';
 import Footer from './Footer';
+import SocialMedia from './SocialMedia';
 
 function HomeDodo() {
   enableBodyScroll(document)
@@ -131,6 +132,8 @@ function HomeDodo() {
 
       <DodoStory/>      
       </div>
+
+      <SocialMedia/>
 
       <div ref={gallery}>
       <DodoCarousol/>

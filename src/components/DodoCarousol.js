@@ -1,18 +1,23 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import whats_in_dodo_club from '../assets/whats_in_dodo_club.png'
 import { Grid, Image, } from 'semantic-ui-react'
 // import {Link} from 'react-router-dom'
 import browse_gallery_btn from '../assets/browse_gallery_btn.png'
 
+
 function DodoCarousol() {
 
-  const src = 'https://gateway.pinata.cloud/ipfs/QmZwETCvSnwmVSBV52PnB67rE8cADKjEFR8Tr4pJCYJwAB'
+  const src = 'https://gateway.pinata.cloud/ipfs/QmVQRQaEohUJFyBxH9kTxTn76iGzfh3vaLYbtrkvducQdn'
 
-  const INDEX1 = Math.random()*20|0 +1;
+  const INDEX1 = Math.random()*6|0 +1;
   const INDEX2 = INDEX1 +1;
   const INDEX3 = INDEX1 +2;
   const INDEX4 = INDEX1 +3;
   const INDEX5 = INDEX1 +4;
+
+  useEffect(() => {
+   
+  },);
 
   return (
     <div style={{backgroundColor:'#0f0f0f', paddingBottom:'20px'}}>

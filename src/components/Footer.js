@@ -3,7 +3,7 @@ import { Grid, Button,Image } from 'semantic-ui-react'
 import wasted_dodo_footer from '../assets/wasted_dodo_footer.png'
 import instagram from '../assets/instagram.png'
 import twitter from '../assets/twitter.png'
-import discord from '../assets/discord.png'
+import discord_footer from '../assets/discord_footer.png'
 
 function Footer() {
   return (
@@ -35,9 +35,17 @@ function Footer() {
                         </Grid.Column>
 
                         <Grid.Column mobile={5} tablet={3} computer={3}>
-                        <Image src={discord} size='mini'/>
+                        <Image src={discord_footer} size='mini'/>
                         </Grid.Column>
+
+                        <Grid.Column>
+                        
+                        </Grid.Column>
+
+
                     </Grid>
+
+                    
                 </div>
 
                 </Grid.Column>
