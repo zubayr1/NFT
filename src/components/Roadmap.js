@@ -80,7 +80,7 @@ export default function Roadmap() {
            <Image src={dodo3_scratch} size='large' />
           </Grid.Column>
 
-          <Grid.Column mobile={16} tablet={8} computer={8} floated='left'>
+          <Grid.Column mobile={14} tablet={8} computer={8} floated='left'>
       <div className="wrapper">
           
         <div id="timeline1" ref={timeline1} className="timeline" />
