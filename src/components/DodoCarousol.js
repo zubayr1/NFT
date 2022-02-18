@@ -1,9 +1,9 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import whats_in_dodo_club from '../assets/whats_in_dodo_club.png'
 import { Grid, Image, } from 'semantic-ui-react'
 // import {Link} from 'react-router-dom'
 import browse_gallery_btn from '../assets/browse_gallery_btn.png'
-
+import PreloadImage from 'react-preload-image'
 
 function DodoCarousol() {
 
@@ -15,9 +15,7 @@ function DodoCarousol() {
   const INDEX4 = INDEX1 +3;
   const INDEX5 = INDEX1 +4;
 
-  useEffect(() => {
-   
-  },);
+  
 
   return (
     <div style={{backgroundColor:'#0f0f0f', paddingBottom:'20px'}}>
@@ -46,7 +44,7 @@ function DodoCarousol() {
       <Grid.Column  mobile={7} tablet={3} computer={3}>
       <Grid centered >
         <Grid.Row>
-      <Image src={src+'/'+ INDEX1+'.png'} size='medium' rounded/>
+      <PreloadImage src={src+'/'+ INDEX1+'.png'} style={{width: '100%', height: '300px',}}/>
       </Grid.Row>
 
       <Grid.Row>
@@ -60,7 +58,7 @@ function DodoCarousol() {
       <Grid.Column only='tablet computer' tablet={3} computer={3}>
       <Grid centered >
         <Grid.Row>
-      <Image src={src+'/'+ INDEX2+'.png'} size='medium' rounded/>
+      <PreloadImage src={src+'/'+ INDEX2+'.png'} style={{width: '100%', height: '300px',}}/>
       </Grid.Row>
 
       <Grid.Row>
@@ -74,7 +72,7 @@ function DodoCarousol() {
       <Grid.Column only='tablet computer' tablet={3} computer={3}>
       <Grid centered >
         <Grid.Row>
-      <Image src={src+'/'+ INDEX3+'.png'} size='medium' rounded/>
+      <PreloadImage src={src+'/'+ INDEX3+'.png'} style={{width: '100%', height: '300px',}}/>
       </Grid.Row>
 
       <Grid.Row>
@@ -88,7 +86,7 @@ function DodoCarousol() {
       <Grid.Column mobile={7} tablet={3} computer={3}>
       <Grid centered >
         <Grid.Row>
-      <Image src={src+'/'+ INDEX4+'.png'} size='medium' rounded/>
+      <PreloadImage src={src+'/'+ INDEX4+'.png'} style={{width: '100%', height: '300px',}}/>
       </Grid.Row>
 
       <Grid.Row>
@@ -101,7 +99,7 @@ function DodoCarousol() {
       <Grid.Column  only='tablet computer' tablet={3} computer={3}>
       <Grid centered >
         <Grid.Row>
-      <Image src={src+'/'+ INDEX5+'.png'} size='medium' rounded/>
+      <PreloadImage src={src+'/'+ INDEX5+'.png'} style={{width: '100%', height: '300px',}}/>
       </Grid.Row>
 
       <Grid.Row>

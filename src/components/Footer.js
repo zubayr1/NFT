@@ -27,15 +27,21 @@ function Footer() {
                 <div style={{marginTop:'20px', }}>
                     <Grid>
                         <Grid.Column mobile={5} tablet={3} computer={3}>
+                        <a href='https://instagram.com/wasteddodoclub?utm_medium=copy_link'>
                         <Image src={instagram} size='mini'/>
+                        </a>
                         </Grid.Column>
 
                         <Grid.Column mobile={5} tablet={3} computer={3}>
+                        <a href='https://twitter.com/dodo_drunk'>
                         <Image src={twitter} size='mini'/>
+                        </a>
                         </Grid.Column>
 
                         <Grid.Column mobile={5} tablet={3} computer={3}>
+                        <a href='https://discord.gg/aug6ttSW'>
                         <Image src={discord_footer} size='mini'/>
+                        </a>
                         </Grid.Column>
 
                         <Grid.Column>
