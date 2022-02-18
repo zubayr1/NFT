@@ -79,8 +79,8 @@ export default function Roadmap() {
           <Grid.Column only="tablet computer" tablet={6} computer={6} floated='right' verticalAlign="middle">
            <Image src={dodo3_scratch} size='large' />
           </Grid.Column>
-        
-          <Grid.Column mobile={10} tablet={8} computer={8} floated='left'>
+
+          <Grid.Column mobile={16} tablet={8} computer={8} floated='left'>
       <div className="wrapper">
           
         <div id="timeline1" ref={timeline1} className="timeline" />
