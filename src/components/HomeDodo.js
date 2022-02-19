@@ -139,9 +139,9 @@ function HomeDodo() {
       <DodoCarousol/>
       </div>
 
-      <div style={{marginBottom:'20px', marginTop:'30px'}} ref={roadmap}>
+      {/* <div style={{marginBottom:'20px', marginTop:'30px'}} ref={roadmap}>
         <Roadmap />
-      </div>
+      </div> */}
 
       <div style={{marginBottom:'20px', marginTop:'60px'}}>
       <BuyDodo/>
