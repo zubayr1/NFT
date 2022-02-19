@@ -1,6 +1,6 @@
 import React, {useState, useRef} from 'react'
 import HomeHeader from './HomeHeader';
-import { Grid, GridRow, Image,Form } from 'semantic-ui-react'
+import { Grid,  Image,Form } from 'semantic-ui-react'
 import welcome_message from '../assets/welcome_message.png'
 import corrected_welcome from '../assets/corrected_welcome.png'
 import dodo1_scratch from '../assets/dodo1_scratch.png'
@@ -45,86 +45,83 @@ function HomeDodo() {
     <div>
       <HomeHeader changeState={changeState}/>
 
-      <div style={{marginLeft:'40px', marginRight:'40px', marginTop:'100px'}} ref={home}>
+      <div style={{marginLeft:'20px', marginRight:'20px', marginTop:'10%'}} ref={home}>
+
       <Grid>
-      <Grid.Column mobile={9} tablet={8} computer={8} floated='left'>
+        <Grid.Row>
+          <Grid.Column mobile={9} tablet={8} computer={8} floated='right'>
 
-        <Grid>
-          <GridRow>
-          <div>
-            <Image src={welcome_message} size='huge' />
-          </div>
+                <div>
+                  <Image src={welcome_message} size='huge' />
+                </div>
 
-          </GridRow>
-          
+              
 
-          <GridRow style={{marginTop:'20px'}}>
-            <div class='background-img'>
-              <Image src={corrected_welcome} size='big' />
-            </div>          
-          </GridRow>
+                <div class='background-img' style={{marginTop:'2%'}}>
+                  <Image src={corrected_welcome} size='big' />
+                </div>          
 
-          <GridRow style={{marginTop:'5px'}}>
-            
-            <Grid.Column >
-            <div class='background-img' style={{float:'center'}}>
-              <Image src={sorry} size='medium' />
-            </div> 
-            </Grid.Column>
-                     
-          </GridRow>
-
-          <Grid>
-            <Grid.Column mobile={16} tablet={16} computer={12}>
-              <GridRow style={{marginTop:'20px'}} >
-              <div style={{marginLeft:'20px', minWidth:'240px'}}>
-                  <Image src={dodo_intro} size='huge' />
-                  </div>
-              </GridRow>
-
-              <Grid>
-              <Grid.Row style={{marginTop:'20px'}} columns={2} verticalAlign="middle">
                 
-                <Grid.Column mobile={12} tablet={12} computer={13}>
-                  <div style={{marginLeft:'20px',}}>
+                <div class='background-img' style={{float:'center', marginTop:'2%'}}>
+                  <Image src={sorry} size='medium' />
+                </div> 
+
+                <Image src={dodo_intro} size='big' style={{marginTop:'5%'}}/>
+
+                <Grid style={{marginTop:'4%'}}>
+                  <Grid.Row only='computer tablet'>     
+                          
+                      <Grid.Column tablet={12} computer={10}>
+                                <Form size='small' key='small'>
+                                  <Form.Field>                      
+                                    <input placeholder='search collections' style={{borderRadius:'50px', backgroundColor:'#0F0F0F', color:'white'}}onChange={e => setSearchValue(e.target.value)}/>
+                                  </Form.Field>
+                                </Form>
+                      </Grid.Column>
+
+                      <Grid.Column mobile={3} tablet={3} computer={3}>
+                              <div  onClick={handleSearch}>
+                              <Image src={search_btn} size='mini'/>
+                              </div>
+                      </Grid.Column>               
+
+                  </Grid.Row>
+                </Grid>
+
+
+          </Grid.Column>
+
+          <Grid.Column mobile={7} tablet={6} computer={4} floated='left'>
+              <div>
+            <div class="avatar2">	
+                <Image src={dodo1_scratch} size='large'/>
+                </div>
+                </div>
+          </Grid.Column>
+        </Grid.Row>
+       </Grid>
+
+       <Grid>
+        <Grid.Row only='mobile'>       
+            <Grid.Column mobile={13}>
                       <Form size='small' key='small'>
                         <Form.Field>                      
                           <input placeholder='search collections' style={{borderRadius:'50px', backgroundColor:'#0F0F0F', color:'white'}}onChange={e => setSearchValue(e.target.value)}/>
                         </Form.Field>
                       </Form>
-                      </div>
-                  </Grid.Column>
+            </Grid.Column>
 
-                  <Grid.Column mobile={3} tablet={3} computer={3}>
+            <Grid.Column mobile={3} >
                     <div  onClick={handleSearch}>
                     <Image src={search_btn} size='mini'/>
                     </div>
-                  </Grid.Column>
-                  
-                
-              </Grid.Row>
-              </Grid>
-            </Grid.Column>
-            
-            
+            </Grid.Column>               
 
-          </Grid>
-
-        </Grid>
-       
-
-
-      </Grid.Column>
-
-      <Grid.Column mobile={7} tablet={6} computer={4} floated='right'>
-        <div>
-      <div class="avatar2">	
-          <Image src={dodo1_scratch} size='large'/>
-          </div>
-          </div>
-      </Grid.Column>
+        </Grid.Row>
+      </Grid>
      
-    </Grid>
+
+    
 
     </div>
 
@@ -158,3 +155,6 @@ function HomeDodo() {
 }
 
 export default HomeDodo
+
+
+

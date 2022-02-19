@@ -4,18 +4,18 @@ import { Button} from 'semantic-ui-react'
 function BuyDodo() {
   return (
     <div style={{backgroundColor:'black'}}>
-        <div style={{marginTop:'30px', marginLeft:'20px', marginRight:'20px', }}>
+        <div style={{marginTop:'3%', marginLeft:'20px', marginRight:'20px', }}>
             <div style={{border: '2px solid #FE560C', borderRadius:'14px'}}>
 
-                <div style={{marginTop:'30px', marginLeft:'20px', marginRight:'40px', marginBottom:'30px', textAlign:'center' }}>
+                <div style={{marginTop:'2%', marginLeft:'20px', marginRight:'40px', marginBottom:'30px', textAlign:'center' }}>
 
-        <p class="FuturaFont" style={{color:'#FE560C', fontSize:'40px', fontWeight:'bolder'}}>
-                 BUY A DODO</p>
+                      <p class="FuturaFont" style={{color:'#FE560C', fontSize:'40px', fontWeight:'bolder'}}>
+                              BUY A DODO</p>
 
-                 <p class="FuturaFont" style={{color:'#FE560C', fontSize:'20px', fontWeight:'bold'}}>
-                 The pre-sale will start soon. Follow us in Discord, Twitter and Instagram to always stay updated!
-                 The first followers will have special offers throughout our journey.
-                 </p>
+                      <p class="FuturaFont" style={{color:'#FE560C', fontSize:'20px', fontWeight:'bold'}}>
+                      The pre-sale will start soon. Follow us in Discord, Twitter and Instagram to always stay updated!
+                      The first followers will have special offers throughout our journey.
+                      </p>
 
                    
 

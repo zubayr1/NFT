@@ -7,7 +7,7 @@ import { Grid, Image } from 'semantic-ui-react'
 function SocialMedia() {
   return (
     <div style={{backgroundColor:'black'}}>
-        <div style={{marginTop:'10px', paddingBottom:'20px', marginLeft:'30px', marginRight:'30px', }}>
+        <div style={{marginTop:'3%', paddingBottom:'20px', marginLeft:'20px', marginRight:'20px', }}>
             <div style={{border: '2px solid #c3cbd9', borderRadius:'14px'}}>
                 <div style={{marginTop:'10px', paddingBottom:'20px', }}>
                     <p class="FuturaFont" style={{color:'#FE560C', fontSize:'40px', fontWeight:'bolder'}}>
@@ -17,8 +17,6 @@ function SocialMedia() {
                        
                     <Grid>
                         <Grid.Row columns={4} verticalAlign="middle">
-
-                             
 
                                 <Grid.Column  tablet={16} computer={16} floated='right'>
 
@@ -30,16 +28,12 @@ function SocialMedia() {
                                 <a href='https://instagram.com/wasteddodoclub?utm_medium=copy_link'><Image src={instagram_original} size='small'/></a>
                                     
                                  </Image.Group>
-                                </Grid.Column>
+                                </Grid.Column>                               
 
-                                
-
-                        </Grid.Row>
-                                
+                        </Grid.Row>                               
 
                            
                     </Grid>
-
 
                  </div>
             </div>

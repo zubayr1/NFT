@@ -7,12 +7,12 @@ import  './floating3.css'
 function DodoStory() {
   return (
     <div style = {{ backgroundColor:"black"}}>
-      <div style = {{marginTop:'20px', paddingBottom:'30px'}}>
+      <div style = {{marginTop:'6%', paddingBottom:'30px'}}>
         <Grid style={{ marginTop:'10px'}} padded>
           
           <Grid.Row verticalAlign="middle">
-            <Grid.Column only='tablet computer' tablet={4} computer={4} floated='left'>
-            <div class="avatar3" style={{marginLeft:'20px'}}>
+            <Grid.Column only='tablet computer' tablet={4} computer={4} floated='right'>
+            <div class="avatar3" style={{marginLeft:'4%'}}>
                 <Image src={dodo2_scratch} size='big' />
                 </div>
             </Grid.Column>
@@ -20,7 +20,7 @@ function DodoStory() {
               <Grid.Column mobile={16} tablet={10} computer={10}>
 
                   
-                  <Grid style={{marginLeft:'10px', marginRight:'10px'}}>
+                  <Grid style={{marginLeft:'2%', marginRight:'2%'}}>
                   <Grid.Row columns={2}>
                     <Image src={dodo_story} size='big' />
                   </Grid.Row>

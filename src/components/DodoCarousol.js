@@ -21,7 +21,7 @@ function DodoCarousol() {
     <div style={{backgroundColor:'#0f0f0f', paddingBottom:'20px'}}>
 
 
-      <div style={{marginLeft:'20px', marginRight:'20px', marginTop:"20px", marginBottom:'10px', }}>
+      <div style={{marginLeft:'10px', marginRight:'10px', marginTop:"3%", marginBottom:'2%', }}>
              <p class="FuturaFont" style={{color:'#ffffff', fontSize:'50px', fontWeight:'bolder'}}>
                 What's in <p style={{display:"inline", color:'#FE560C'}}>Dodo </p>Club</p>
              
@@ -124,9 +124,6 @@ function DodoCarousol() {
         </Grid>
         
         </Grid.Column>
-
-
-
 
       </Grid.Row> 
 
