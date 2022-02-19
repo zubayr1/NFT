@@ -12,7 +12,7 @@ import  './floating2.css'
 import  './appear_animation.css';
 import { enableBodyScroll } from 'body-scroll-lock';
 import DodoCarousol from './DodoCarousol';
-import Roadmap from './Roadmap';
+// import Roadmap from './Roadmap';
 import BuyDodo from './BuyDodo';
 import Footer from './Footer';
 import SocialMedia from './SocialMedia';
