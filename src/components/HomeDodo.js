@@ -1,25 +1,25 @@
-import React, { useRef} from 'react'
+import React, {useState, useRef} from 'react'
 import HomeHeader from './HomeHeader';
-// import { Grid, GridRow, Image,Form } from 'semantic-ui-react'
-// import welcome_message from '../assets/welcome_message.png'
-// import corrected_welcome from '../assets/corrected_welcome.png'
-// import dodo1_scratch from '../assets/dodo1_scratch.png'
-// import sorry from '../assets/sorry.png'
-// import dodo_intro from '../assets/dodo_intro.png'
-// import search_btn from '../assets/search_btn.png'
+import { Grid, GridRow, Image,Form } from 'semantic-ui-react'
+import welcome_message from '../assets/welcome_message.png'
+import corrected_welcome from '../assets/corrected_welcome.png'
+import dodo1_scratch from '../assets/dodo1_scratch.png'
+import sorry from '../assets/sorry.png'
+import dodo_intro from '../assets/dodo_intro.png'
+import search_btn from '../assets/search_btn.png'
 import DodoStory from './DodoStory';
 import  './floating2.css'
 import  './appear_animation.css';
 import { enableBodyScroll } from 'body-scroll-lock';
 import DodoCarousol from './DodoCarousol';
-// import Roadmap from './Roadmap';
+import Roadmap from './Roadmap';
 import BuyDodo from './BuyDodo';
 import Footer from './Footer';
 import SocialMedia from './SocialMedia';
 
 function HomeDodo() {
   enableBodyScroll(document)
-  // const [searchvalue, setSearchValue] = useState('')
+  const [searchvalue, setSearchValue] = useState('')
 
   const home = useRef(null)
   const gallery = useRef(null)
@@ -36,16 +36,16 @@ function HomeDodo() {
   }
 
 
-  // function handleSearch()
-  // {
-  //   console.log(searchvalue);
-  // }
+  function handleSearch()
+  {
+    console.log(searchvalue);
+  }
 
   return (
     <div>
       <HomeHeader changeState={changeState}/>
 
-      {/* <div style={{marginLeft:'40px', marginRight:'40px', marginTop:'100px'}} ref={home}>
+      <div style={{marginLeft:'40px', marginRight:'40px', marginTop:'100px'}} ref={home}>
       <Grid>
       <Grid.Column mobile={9} tablet={8} computer={8} floated='left'>
 
@@ -126,7 +126,7 @@ function HomeDodo() {
      
     </Grid>
 
-    </div> */}
+    </div>
 
     <div>
 
@@ -139,9 +139,9 @@ function HomeDodo() {
       <DodoCarousol/>
       </div>
 
-      {/* <div style={{marginBottom:'20px', marginTop:'30px'}} ref={roadmap}>
+      <div style={{marginBottom:'20px', marginTop:'30px'}} ref={roadmap}>
         <Roadmap />
-      </div> */}
+      </div>
 
       <div style={{marginBottom:'20px', marginTop:'60px'}}>
       <BuyDodo/>
