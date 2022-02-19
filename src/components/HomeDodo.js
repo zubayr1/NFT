@@ -1,5 +1,5 @@
 import React, {useState, useRef} from 'react'
-import HomeHeader from './HomeHeader';
+// import HomeHeader from './HomeHeader';
 import { Grid, GridRow, Image,Form } from 'semantic-ui-react'
 import welcome_message from '../assets/welcome_message.png'
 import corrected_welcome from '../assets/corrected_welcome.png'
@@ -23,17 +23,17 @@ function HomeDodo() {
 
   const home = useRef(null)
   const gallery = useRef(null)
-  const roadmap = useRef(null)
+  // const roadmap = useRef(null)
 
-  const changeState = (childdata) => {
+  // const changeState = (childdata) => {
     
-    if(childdata==='home')
-      home.current.scrollIntoView({ behavior: 'smooth' })
-    if(childdata==='gallery')
-      gallery.current.scrollIntoView({ behavior: 'smooth' }) 
-    if(childdata==='roadmap')
-      roadmap.current.scrollIntoView({ behavior: 'smooth' }) 
-  }
+  //   if(childdata==='home')
+  //     home.current.scrollIntoView({ behavior: 'smooth' })
+  //   if(childdata==='gallery')
+  //     gallery.current.scrollIntoView({ behavior: 'smooth' }) 
+  //   if(childdata==='roadmap')
+  //     roadmap.current.scrollIntoView({ behavior: 'smooth' }) 
+  // }
 
 
   function handleSearch()
@@ -43,7 +43,7 @@ function HomeDodo() {
 
   return (
     <div>
-      <HomeHeader changeState={changeState}/>
+      {/* <HomeHeader changeState={changeState}/> */}
 
       <div style={{marginLeft:'40px', marginRight:'40px', marginTop:'100px'}} ref={home}>
       <Grid>
