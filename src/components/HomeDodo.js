@@ -1,12 +1,12 @@
-import React, {useState, useRef} from 'react'
-// import HomeHeader from './HomeHeader';
-import { Grid, GridRow, Image,Form } from 'semantic-ui-react'
-import welcome_message from '../assets/welcome_message.png'
-import corrected_welcome from '../assets/corrected_welcome.png'
-import dodo1_scratch from '../assets/dodo1_scratch.png'
-import sorry from '../assets/sorry.png'
-import dodo_intro from '../assets/dodo_intro.png'
-import search_btn from '../assets/search_btn.png'
+import React, { useRef} from 'react'
+import HomeHeader from './HomeHeader';
+// import { Grid, GridRow, Image,Form } from 'semantic-ui-react'
+// import welcome_message from '../assets/welcome_message.png'
+// import corrected_welcome from '../assets/corrected_welcome.png'
+// import dodo1_scratch from '../assets/dodo1_scratch.png'
+// import sorry from '../assets/sorry.png'
+// import dodo_intro from '../assets/dodo_intro.png'
+// import search_btn from '../assets/search_btn.png'
 import DodoStory from './DodoStory';
 import  './floating2.css'
 import  './appear_animation.css';
@@ -19,33 +19,33 @@ import SocialMedia from './SocialMedia';
 
 function HomeDodo() {
   enableBodyScroll(document)
-  const [searchvalue, setSearchValue] = useState('')
+  // const [searchvalue, setSearchValue] = useState('')
 
   const home = useRef(null)
   const gallery = useRef(null)
-  // const roadmap = useRef(null)
+  const roadmap = useRef(null)
 
-  // const changeState = (childdata) => {
+  const changeState = (childdata) => {
     
-  //   if(childdata==='home')
-  //     home.current.scrollIntoView({ behavior: 'smooth' })
-  //   if(childdata==='gallery')
-  //     gallery.current.scrollIntoView({ behavior: 'smooth' }) 
-  //   if(childdata==='roadmap')
-  //     roadmap.current.scrollIntoView({ behavior: 'smooth' }) 
-  // }
-
-
-  function handleSearch()
-  {
-    console.log(searchvalue);
+    if(childdata==='home')
+      home.current.scrollIntoView({ behavior: 'smooth' })
+    if(childdata==='gallery')
+      gallery.current.scrollIntoView({ behavior: 'smooth' }) 
+    if(childdata==='roadmap')
+      roadmap.current.scrollIntoView({ behavior: 'smooth' }) 
   }
+
+
+  // function handleSearch()
+  // {
+  //   console.log(searchvalue);
+  // }
 
   return (
     <div>
-      {/* <HomeHeader changeState={changeState}/> */}
+      <HomeHeader changeState={changeState}/>
 
-      <div style={{marginLeft:'40px', marginRight:'40px', marginTop:'100px'}} ref={home}>
+      {/* <div style={{marginLeft:'40px', marginRight:'40px', marginTop:'100px'}} ref={home}>
       <Grid>
       <Grid.Column mobile={9} tablet={8} computer={8} floated='left'>
 
@@ -126,7 +126,7 @@ function HomeDodo() {
      
     </Grid>
 
-    </div>
+    </div> */}
 
     <div>
 
