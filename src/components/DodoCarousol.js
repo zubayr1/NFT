@@ -1,9 +1,9 @@
 import React from 'react'
-import whats_in_dodo_club from '../assets/whats_in_dodo_club.png'
 import { Grid, Image, } from 'semantic-ui-react'
 // import {Link} from 'react-router-dom'
 import browse_gallery_btn from '../assets/browse_gallery_btn.png'
-import PreloadImage from 'react-preload-image'
+
+
 
 function DodoCarousol() {
 
@@ -19,106 +19,125 @@ function DodoCarousol() {
 
   return (
     <div style={{backgroundColor:'#0f0f0f', paddingBottom:'20px'}}>
-        <Grid>
-            <Grid.Row centered>
-        <div style={{marginLeft:'40px', marginRight:'40px', marginTop:"20px",}}>
-             <Image src={whats_in_dodo_club} centered size='huge' />
+
+
+      <div style={{marginLeft:'20px', marginRight:'20px', marginTop:"20px", marginBottom:'10px', }}>
+             <p class="FuturaFont" style={{color:'#ffffff', fontSize:'50px', fontWeight:'bolder'}}>
+                What's in <p style={{display:"inline", color:'#FE560C'}}>Dodo </p>Club</p>
              
         </div>
-        </Grid.Row>
+        
 
-        <Grid.Row centered>
-        <div style={{marginLeft:'40px', marginRight:'40px', marginTop:"20px", marginBottom:'10px', }}>
+        <div style={{marginLeft:'20px', marginRight:'20px', marginTop:"20px", marginBottom:'10px', }}>
              <p class="FuturaFont" style={{color:'#FE560C', fontSize:'16px',}}>
                  A collection of 8000 unique Wasted Dodos</p>
              
         </div>
-        </Grid.Row>
-        </Grid>
 
         
 
-    <Grid centered >
-    <Grid.Row columns={5}>
+        <Grid padded centered>
+      
+      <Grid.Row  > 
+        
+        <Grid.Column mobile={16} tablet={12} computer={12}>  
 
-      <Grid.Column  mobile={7} tablet={3} computer={3}>
-      <Grid centered >
-        <Grid.Row>
-      <PreloadImage src={src+'/'+ INDEX1+'.png'} style={{width: '100%', height: '300px',}}/>
-      </Grid.Row>
+        <Grid centered>
+            <Grid.Row columns={5} >
+
+
+                <Grid.Column mobile={8} tablet={3} computer={3} >                   
+                  <Grid centered padded>
+                      <Grid.Row>
+                    <Image src={src+'/'+ INDEX1+'.png'}/>
+                    </Grid.Row>
+
+                    <Grid.Row>
+                    <p class="FuturaFont" style={{color:'#FE560C', fontSize:'16px',}}>
+                              Dodo #{INDEX1}</p>
+                          </Grid.Row>
+                    </Grid>
+                </Grid.Column>
+
+
+
+                <Grid.Column only='tablet computer' tablet={3} computer={3}>
+                  <Grid centered padded>
+                    <Grid.Row>
+                  <Image src={src+'/'+ INDEX2+'.png'} />
+                  </Grid.Row>
+
+                  <Grid.Row>
+                  <p class="FuturaFont" style={{color:'#FE560C', fontSize:'16px',}}>
+                            Dodo #{INDEX2}</p>
+                        </Grid.Row>
+                      </Grid>
+                </Grid.Column>
+
+
+
+                <Grid.Column only='tablet computer' tablet={3} computer={3}>
+                  <Grid centered padded>
+                      <Grid.Row>
+                    <Image src={src+'/'+ INDEX5+'.png'} />
+                    </Grid.Row>
+
+                    <Grid.Row>
+                    <p class="FuturaFont" style={{color:'#FE560C', fontSize:'16px',}}>
+                              Dodo #{INDEX5}</p>
+                          </Grid.Row>
+                    </Grid>
+                </Grid.Column>
+
+
+
+                <Grid.Column mobile={8} tablet={3} computer={3}>
+                  <Grid centered padded>
+                      <Grid.Row>
+                    <Image src={src+'/'+ INDEX3+'.png'} />
+                    </Grid.Row>
+
+                    <Grid.Row>
+                    <p class="FuturaFont" style={{color:'#FE560C', fontSize:'16px',}}>
+                              Dodo #{INDEX4}</p>
+                          </Grid.Row>
+                    </Grid>
+                </Grid.Column>
+
+
+
+                <Grid.Column only='tablet computer' tablet={3} computer={3}>
+                  <Grid centered padded>
+                      <Grid.Row>
+                    <Image src={src+'/'+ INDEX5+'.png'} />
+                    </Grid.Row>
+
+                    <Grid.Row>
+                    <p class="FuturaFont" style={{color:'#FE560C', fontSize:'16px',}}>
+                              Dodo #{INDEX5}</p>
+                          </Grid.Row>
+                    </Grid>
+                </Grid.Column>
+
+            </Grid.Row>
+            
+        </Grid>
+        
+        </Grid.Column>
+
+
+
+
+      </Grid.Row> 
 
       <Grid.Row>
-      <p class="FuturaFont" style={{color:'#FE560C', fontSize:'16px',}}>
-                 Dodo #{INDEX1}</p>
-            </Grid.Row>
-          </Grid>
-      </Grid.Column>
-
-
-      <Grid.Column only='tablet computer' tablet={3} computer={3}>
-      <Grid centered >
-        <Grid.Row>
-      <PreloadImage src={src+'/'+ INDEX2+'.png'} style={{width: '100%', height: '300px',}}/>
+        <Image src={browse_gallery_btn} />
       </Grid.Row>
-
-      <Grid.Row>
-      <p class="FuturaFont" style={{color:'#FE560C', fontSize:'16px',}}>
-                 Dodo #{INDEX2}</p>
-            </Grid.Row>
-          </Grid>
-      </Grid.Column>
-
-
-      <Grid.Column only='tablet computer' tablet={3} computer={3}>
-      <Grid centered >
-        <Grid.Row>
-      <PreloadImage src={src+'/'+ INDEX3+'.png'} style={{width: '100%', height: '300px',}}/>
-      </Grid.Row>
-
-      <Grid.Row>
-      <p class="FuturaFont" style={{color:'#FE560C', fontSize:'16px',}}>
-                 Dodo #{INDEX3}</p>
-            </Grid.Row>
-          </Grid>
-      </Grid.Column>
-
-
-      <Grid.Column mobile={7} tablet={3} computer={3}>
-      <Grid centered >
-        <Grid.Row>
-      <PreloadImage src={src+'/'+ INDEX4+'.png'} style={{width: '100%', height: '300px',}}/>
-      </Grid.Row>
-
-      <Grid.Row>
-      <p class="FuturaFont" style={{color:'#FE560C', fontSize:'16px',}}>
-                 Dodo #{INDEX4}</p>
-            </Grid.Row>
-          </Grid>
-      </Grid.Column>
-
-      <Grid.Column  only='tablet computer' tablet={3} computer={3}>
-      <Grid centered >
-        <Grid.Row>
-      <PreloadImage src={src+'/'+ INDEX5+'.png'} style={{width: '100%', height: '300px',}}/>
-      </Grid.Row>
-
-      <Grid.Row>
-      <p class="FuturaFont" style={{color:'#FE560C', fontSize:'16px',}}>
-                 Dodo #{INDEX5}</p>
-            </Grid.Row>
-          </Grid>
-      </Grid.Column>
-
-      </Grid.Row>
-    </Grid>
-
-    <div style={{marginTop:'20px',}}>
-      {/* <Link to="/alldodos"> */}
-        <Image src={browse_gallery_btn} size='medium' centered/>
-        {/* </Link> */}
-    </div>
+     
     
+  </Grid>
 
+  
 
     </div>
   )

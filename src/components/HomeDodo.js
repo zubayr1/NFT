@@ -77,7 +77,7 @@ function HomeDodo() {
           <Grid>
             <Grid.Column mobile={16} tablet={16} computer={12}>
               <GridRow style={{marginTop:'20px'}} >
-              <div style={{marginLeft:'20px', minWidth:'300px'}}>
+              <div style={{marginLeft:'20px', minWidth:'240px'}}>
                   <Image src={dodo_intro} size='huge' />
                   </div>
               </GridRow>
@@ -141,7 +141,7 @@ function HomeDodo() {
 
       <div style={{marginBottom:'20px', marginTop:'30px'}} ref={roadmap}>
         <Roadmap />
-      </div>
+      </div> 
 
       <div style={{marginBottom:'20px', marginTop:'60px'}}>
       <BuyDodo/>

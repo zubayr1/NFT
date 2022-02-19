@@ -1,8 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
 import TimelineObserver from "react-timeline-animation";
-import { Grid, Image } from "semantic-ui-react";
-import dodo3_scratch from '../assets/dodo3_scratch.png'
+
 
 import "./Roadmapstyles.css";
 
@@ -71,63 +70,61 @@ export default function Roadmap() {
 
     return (
       <div>
-        <p class="FuturaFont" style={{color:'#FE560C', fontSize:'80px', fontWeight:'bolder'}}>
+         <p class="FuturaFont" style={{color:'#FE560C', fontSize:'80px', fontWeight:'bolder'}}>
             Dodo Roadmap
             </p>
-          <div style={{marginLeft:'40px', marginRight:'20px'}}>
-        <Grid >
-          <Grid.Column only="tablet computer" tablet={6} computer={6} floated='right' verticalAlign="middle">
-           <Image src={dodo3_scratch} size='large' />
-          </Grid.Column>
 
-          <Grid.Column mobile={16} tablet={8} computer={8} floated='left'>
-      <div className="wrapper">
-          
-        <div id="timeline1" ref={timeline1} className="timeline" />
-        <div className="circleWrapper">
-          <div id="circle1" ref={circle1} className="circle">
-          </div>
-          <div className="message" style={{color:'white'}}>{message1}</div>
-        </div>
 
-        <div id="timeline2" ref={timeline2} className="timeline" />
-        <div className="circleWrapper">
-          <div id="circle2" ref={circle2} className="circle">
-          </div>
-          <div className="message" style={{color:'white'}}>{message2}</div>
-        </div>
+                   
+  <div className="wrapper">
+                
+                <div id="timeline1" ref={timeline1} className="timeline" />
+                <div className="circleWrapper">
+                  <div id="circle1" ref={circle1} className="circle">
+                  </div>
+                  <div className="message" style={{color:'white'}}>{message1}</div>
+                </div>
+        
+                <div id="timeline2" ref={timeline2} className="timeline" />
+                <div className="circleWrapper">
+                  <div id="circle2" ref={circle2} className="circle">
+                  </div>
+                  <div className="message" style={{color:'white'}}>{message2}</div>
+                </div>
+        
+                <div id="timeline3" ref={timeline3} className="timeline" />
+                <div className="circleWrapper">
+                  <div id="circle3" ref={circle3} className="circle">
+                  </div>
+                  <div className="message" style={{color:'white'}}>{message3}</div>
+                </div>
+        
+                <div id="timeline4" ref={timeline4} className="timeline" />
+                <div className="circleWrapper">
+                  <div id="circle4" ref={circle4} className="circle">
+                  </div>
+                  <div className="message" style={{color:'white'}}>{message4}</div>
+                </div>
+        
+                <div id="timeline5" ref={timeline5} className="timeline" />
+                <div className="circleWrapper">
+                  <div id="circle5" ref={circle5} className="circle">
+                  </div>
+                  <div className="message" style={{color:'white'}}>{message5}</div>
+                </div>
+        
+                <div id="timeline6" ref={timeline6} className="timeline" />
+                <div className="circleWrapper">
+                  <div id="circle6" ref={circle6} className="circle">
+                  </div>
+                  <div className="message" style={{color:'white'}}>{message6}</div>
+                </div>
+              </div>
 
-        <div id="timeline3" ref={timeline3} className="timeline" />
-        <div className="circleWrapper">
-          <div id="circle3" ref={circle3} className="circle">
-          </div>
-          <div className="message" style={{color:'white'}}>{message3}</div>
-        </div>
 
-        <div id="timeline4" ref={timeline4} className="timeline" />
-        <div className="circleWrapper">
-          <div id="circle4" ref={circle4} className="circle">
-          </div>
-          <div className="message" style={{color:'white'}}>{message4}</div>
-        </div>
 
-        <div id="timeline5" ref={timeline5} className="timeline" />
-        <div className="circleWrapper">
-          <div id="circle5" ref={circle5} className="circle">
-          </div>
-          <div className="message" style={{color:'white'}}>{message5}</div>
-        </div>
 
-        <div id="timeline6" ref={timeline6} className="timeline" />
-        <div className="circleWrapper">
-          <div id="circle6" ref={circle6} className="circle">
-          </div>
-          <div className="message" style={{color:'white'}}>{message6}</div>
-        </div>
-      </div>
-      </Grid.Column>
-      </Grid>
-      </div>
+
       </div>
     );
   };
@@ -139,7 +136,7 @@ export default function Roadmap() {
   };
 
   return (
-    <div className="App">
+    <div>
       <TimelineObserver
         initialColor="#e5e5e5"
         fillColor="red"
@@ -151,7 +148,7 @@ export default function Roadmap() {
           />
         )}
       />
-      <div className="stub2"><div></div></div>
+      <div><div></div></div>
     </div>
   );
 }

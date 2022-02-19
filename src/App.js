@@ -1,7 +1,7 @@
 import './App.css';
 import {BrowserRouter as Router, Routes , Route} from 'react-router-dom'
 import Scratch from './components/Scratch.js';
-import HomeDodo from './components/Home_Dodo';
+import HomeDodo from './components/HomeDodo';
 import AllDodos from './components/AllDodos';
 
 function App() {
