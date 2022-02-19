@@ -3,19 +3,15 @@ import { Grid, Image, } from 'semantic-ui-react'
 // import {Link} from 'react-router-dom'
 import browse_gallery_btn from '../assets/browse_gallery_btn.png'
 
-
+import dc1 from '../assets/dc1.PNG'
+import dc2 from '../assets/dc2.png'
+import dc3 from '../assets/dc3.png'
+import dc4 from '../assets/dc4.PNG'
+import dc5 from '../assets/dc5.png'
 
 function DodoCarousol() {
 
-  const src = 'https://gateway.pinata.cloud/ipfs/QmVQRQaEohUJFyBxH9kTxTn76iGzfh3vaLYbtrkvducQdn'
 
-  const INDEX1 = Math.random()*6|0 +1;
-  const INDEX2 = INDEX1 +1;
-  const INDEX3 = INDEX1 +2;
-  const INDEX4 = INDEX1 +3;
-  const INDEX5 = INDEX1 +4;
-
-  
 
   return (
     <div style={{backgroundColor:'#0f0f0f', paddingBottom:'20px'}}>
@@ -49,12 +45,14 @@ function DodoCarousol() {
                 <Grid.Column mobile={8} tablet={3} computer={3} >                   
                   <Grid centered padded>
                       <Grid.Row>
-                    <Image src={src+'/'+ INDEX1+'.png'}/>
+                      <div style={{border: '2px solid #f7f5f5', borderRadius:'14px', padding:'5px'}}>
+                    <Image src={dc1} rounded/>
+                    </div>
                     </Grid.Row>
 
                     <Grid.Row>
                     <p class="FuturaFont" style={{color:'#FE560C', fontSize:'16px',}}>
-                              Dodo #{INDEX1}</p>
+                              Dodo #1</p>
                           </Grid.Row>
                     </Grid>
                 </Grid.Column>
@@ -64,12 +62,14 @@ function DodoCarousol() {
                 <Grid.Column only='tablet computer' tablet={3} computer={3}>
                   <Grid centered padded>
                     <Grid.Row>
-                  <Image src={src+'/'+ INDEX2+'.png'} />
+                    <div style={{border: '2px solid #f7f5f5', borderRadius:'14px', padding:'5px'}}>
+                    <Image src={dc2} rounded/>
+                    </div>
                   </Grid.Row>
 
                   <Grid.Row>
                   <p class="FuturaFont" style={{color:'#FE560C', fontSize:'16px',}}>
-                            Dodo #{INDEX2}</p>
+                            Dodo #2</p>
                         </Grid.Row>
                       </Grid>
                 </Grid.Column>
@@ -79,12 +79,14 @@ function DodoCarousol() {
                 <Grid.Column only='tablet computer' tablet={3} computer={3}>
                   <Grid centered padded>
                       <Grid.Row>
-                    <Image src={src+'/'+ INDEX5+'.png'} />
+                      <div style={{border: '2px solid #f7f5f5', borderRadius:'14px', padding:'5px'}}>
+                    <Image src={dc3} rounded/>
+                    </div>
                     </Grid.Row>
 
                     <Grid.Row>
                     <p class="FuturaFont" style={{color:'#FE560C', fontSize:'16px',}}>
-                              Dodo #{INDEX5}</p>
+                              Dodo #3</p>
                           </Grid.Row>
                     </Grid>
                 </Grid.Column>
@@ -94,12 +96,14 @@ function DodoCarousol() {
                 <Grid.Column mobile={8} tablet={3} computer={3}>
                   <Grid centered padded>
                       <Grid.Row>
-                    <Image src={src+'/'+ INDEX3+'.png'} />
+                      <div style={{border: '2px solid #f7f5f5', borderRadius:'14px', padding:'5px'}}>
+                    <Image src={dc4} rounded/>
+                    </div>
                     </Grid.Row>
 
                     <Grid.Row>
                     <p class="FuturaFont" style={{color:'#FE560C', fontSize:'16px',}}>
-                              Dodo #{INDEX4}</p>
+                              Dodo #4</p>
                           </Grid.Row>
                     </Grid>
                 </Grid.Column>
@@ -109,12 +113,14 @@ function DodoCarousol() {
                 <Grid.Column only='tablet computer' tablet={3} computer={3}>
                   <Grid centered padded>
                       <Grid.Row>
-                    <Image src={src+'/'+ INDEX5+'.png'} />
+                        <div style={{border: '2px solid #f7f5f5', borderRadius:'14px', padding:'5px'}}>
+                    <Image src={dc5} rounded />
+                    </div>
                     </Grid.Row>
 
                     <Grid.Row>
                     <p class="FuturaFont" style={{color:'#FE560C', fontSize:'16px',}}>
-                              Dodo #{INDEX5}</p>
+                              Dodo #5</p>
                           </Grid.Row>
                     </Grid>
                 </Grid.Column>
