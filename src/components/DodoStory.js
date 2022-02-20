@@ -23,8 +23,7 @@ function DodoStory() {
             </Grid.Column>
 
               <Grid.Column mobile={16} tablet={10} computer={10}>
-
-                  
+              
                   <Grid style={{marginLeft:'2%', marginRight:'2%'}}>
                   <Grid.Row columns={2}>
                     <Image src={dodo_story} size='big' />
@@ -53,7 +52,6 @@ function DodoStory() {
                               </div>
                          </Grid.Row>
                     </Grid>
-                 
               </Grid.Column>
             </Grid.Row>
 

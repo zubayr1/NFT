@@ -1,0 +1,30 @@
+click {
+    width: 300px;
+    background: white;
+    font-size: 40px;
+    margin: 100px auto;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.click:hover {
+    transform: scale(1.04,1.04);
+    transition: .2s;
+    box-shadow: #280c8f 4px 8px 14px;
+}
+
+buttonclick
+{
+    width: 300px;
+    background: white;
+    font-size: 40px;
+    margin: 100px auto;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.buttonclick:hover {
+    transform: scale(1.04,1.04);
+    transition: .2s;
+    box-shadow: #e05a0c 4px 8px 14px;
+}
