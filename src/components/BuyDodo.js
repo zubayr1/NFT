@@ -5,9 +5,9 @@ function BuyDodo() {
   return (
     <div style={{backgroundColor:'black'}}>
         <div style={{marginTop:'3%', marginLeft:'20px', marginRight:'20px', }}>
-            <div style={{border: '2px solid #FE560C', borderRadius:'14px'}}>
+            <div style={{borderRadius:'14px', boxShadow:'#FE560C 0px 3px 6px, #FE560C 0px 5px 10px'}}>
 
-                <div style={{marginTop:'2%', marginLeft:'20px', marginRight:'40px', marginBottom:'30px', textAlign:'center' }}>
+                <div style={{marginTop:'2%', marginLeft:'20px', marginRight:'40px', marginBottom:'30px', textAlign:'center', paddingBottom:'20px' }}>
 
                       <p class="FuturaFont" style={{color:'#FE560C', fontSize:'40px', fontWeight:'bolder'}}>
                               BUY A DODO</p>

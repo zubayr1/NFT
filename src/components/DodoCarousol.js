@@ -45,8 +45,10 @@ function DodoCarousol() {
                 <Grid.Column mobile={8} tablet={3} computer={3} >                   
                   <Grid centered padded>
                       <Grid.Row>
+                        <div style={{borderRadius:'20px' ,boxShadow:'#baecff 0px 4px 10px'}}>
                       <div style={{border: '2px solid #f7f5f5', borderRadius:'14px', padding:'5px'}}>
                     <Image src={dc1} rounded/>
+                    </div>
                     </div>
                     </Grid.Row>
 
@@ -62,8 +64,10 @@ function DodoCarousol() {
                 <Grid.Column only='tablet computer' tablet={3} computer={3}>
                   <Grid centered padded>
                     <Grid.Row>
+                    <div style={{borderRadius:'20px' ,boxShadow:'#baecff 0px 4px 10px'}}>
                     <div style={{border: '2px solid #f7f5f5', borderRadius:'14px', padding:'5px'}}>
                     <Image src={dc2} rounded/>
+                    </div>
                     </div>
                   </Grid.Row>
 
@@ -79,8 +83,10 @@ function DodoCarousol() {
                 <Grid.Column only='tablet computer' tablet={3} computer={3}>
                   <Grid centered padded>
                       <Grid.Row>
+                      <div style={{borderRadius:'20px' ,boxShadow:'#baecff 0px 4px 10px'}}>
                       <div style={{border: '2px solid #f7f5f5', borderRadius:'14px', padding:'5px'}}>
                     <Image src={dc3} rounded/>
+                    </div>
                     </div>
                     </Grid.Row>
 
@@ -96,8 +102,10 @@ function DodoCarousol() {
                 <Grid.Column mobile={8} tablet={3} computer={3}>
                   <Grid centered padded>
                       <Grid.Row>
+                      <div style={{borderRadius:'20px' ,boxShadow:'#baecff 0px 4px 10px'}}>
                       <div style={{border: '2px solid #f7f5f5', borderRadius:'14px', padding:'5px'}}>
                     <Image src={dc4} rounded/>
+                    </div>
                     </div>
                     </Grid.Row>
 
@@ -113,8 +121,10 @@ function DodoCarousol() {
                 <Grid.Column only='tablet computer' tablet={3} computer={3}>
                   <Grid centered padded>
                       <Grid.Row>
+                      <div style={{borderRadius:'20px' ,boxShadow:'#baecff 0px 4px 10px'}}>
                         <div style={{border: '2px solid #f7f5f5', borderRadius:'14px', padding:'5px'}}>
                     <Image src={dc5} rounded />
+                    </div>
                     </div>
                     </Grid.Row>
 
@@ -134,7 +144,9 @@ function DodoCarousol() {
       </Grid.Row> 
 
       <Grid.Row>
+        <div style={{boxShadow: 'rgba(50, 50, 93, 0.25) 1px 13px 27px 3px, rgba(0, 0, 0, 0.3) 0px 8px 16px 0px'}}>
         <Image src={browse_gallery_btn} />
+        </div>
       </Grid.Row>
      
     

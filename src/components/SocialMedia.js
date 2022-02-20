@@ -6,14 +6,14 @@ import { Grid, Image } from 'semantic-ui-react'
 
 function SocialMedia() {
   return (
-    <div style={{backgroundColor:'black'}}>
-        <div style={{marginTop:'3%', paddingBottom:'20px', marginLeft:'20px', marginRight:'20px', }}>
-            <div style={{border: '2px solid #c3cbd9', borderRadius:'14px'}}>
+    <div style={{backgroundColor:'black',}}>
+        <div style={{marginTop:'3%', paddingBottom:'20px', marginLeft:'20px', marginRight:'20px',  }}>
+            <div style={{borderRadius:'14px' ,boxShadow:'#baecff 0px 3px 6px, #baecff 0px 5px 10px'}}>
                 <div style={{marginTop:'10px', paddingBottom:'20px', }}>
+              
                     <p class="FuturaFont" style={{color:'#FE560C', fontSize:'40px', fontWeight:'bolder'}}>
                         Join with Dodos in Social Media</p>
-
-                        
+                   
                        
                     <Grid>
                         <Grid.Row columns={4} verticalAlign="middle">

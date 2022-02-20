@@ -51,7 +51,7 @@ function HomeDodo() {
         <Grid.Row>
           <Grid.Column mobile={9} tablet={8} computer={8} floated='right'>
 
-                <div>
+                <div >
                   <Image src={welcome_message} size='huge' />
                 </div>
 
@@ -70,15 +70,17 @@ function HomeDodo() {
 
                 <Grid style={{marginTop:'4%'}}>
                   <Grid.Row only='computer tablet'>     
-                          
+                      
                       <Grid.Column tablet={12} computer={10}>
+                        <div style={{ borderRadius:'50px',boxShadow:'0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 14px 0 #daeaf0'}}>
                                 <Form size='small' key='small'>
                                   <Form.Field>                      
                                     <input placeholder='search collections' style={{borderRadius:'50px', backgroundColor:'#0F0F0F', color:'white'}}onChange={e => setSearchValue(e.target.value)}/>
                                   </Form.Field>
                                 </Form>
+                          </div>
                       </Grid.Column>
-
+                      
                       <Grid.Column mobile={3} tablet={3} computer={3}>
                               <div  onClick={handleSearch}>
                               <Image src={search_btn} size='mini'/>
@@ -104,11 +106,13 @@ function HomeDodo() {
        <Grid>
         <Grid.Row only='mobile'>       
             <Grid.Column mobile={13}>
+              <div style={{borderRadius:'50px',boxShadow:'0 1px 3px 0 , 0 3px 10px 0 #daeaf0'}}>
                       <Form size='small' key='small'>
                         <Form.Field>                      
                           <input placeholder='search collections' style={{borderRadius:'50px', backgroundColor:'#0F0F0F', color:'white'}}onChange={e => setSearchValue(e.target.value)}/>
                         </Form.Field>
                       </Form>
+                </div>
             </Grid.Column>
 
             <Grid.Column mobile={3} >

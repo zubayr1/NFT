@@ -5,6 +5,11 @@ import dodo2_scratch from '../assets/dodo2_scratch.png'
 import  './floating3.css'
 
 function DodoStory() {
+
+  var well={
+    boxShadow: "1px 1px 1px #9E9E9E"
+}
+
   return (
     <div style = {{ backgroundColor:"black"}}>
       <div style = {{marginTop:'6%', paddingBottom:'30px'}}>
@@ -27,11 +32,12 @@ function DodoStory() {
 
                   <Grid.Row>
                   <div style={{float:'left'}}>
+                    <div style={well}>
                         <p class="FuturaFont" style={{color:'#FE560C', fontSize:'20px'}}>
                           A new experience is Coming Soon!!
                         </p>
                         </div>
-                    
+                        </div>
                     </Grid.Row>     
                        
                         <Grid.Row>

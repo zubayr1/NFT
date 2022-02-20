@@ -34,7 +34,7 @@ function Scratch() {
         <Scratchheader/>
        
         <div style={{backgroundColor:'black'}}>
-        <div style={{marginLeft:'40px', marginRight:'40px', marginTop:'100px',}} >
+        <div style={{marginLeft:'40px', marginRight:'40px', marginTop:'10%',}} >
             <Grid >
                 <Grid.Row>
                     <Grid.Column>
