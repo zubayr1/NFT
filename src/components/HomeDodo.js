@@ -48,8 +48,8 @@ function HomeDodo() {
       <div style={{marginLeft:'20px', marginRight:'20px', marginTop:'10%'}} ref={home}>
 
       <Grid>
-        <Grid.Row>
-          <Grid.Column mobile={9} tablet={8} computer={8} floated='right'>
+        <Grid.Row verticalAlign="middle">
+          <Grid.Column mobile={11} tablet={8} computer={8} floated='right'>
 
                 <div >
                   <Image src={welcome_message} size='huge' />
@@ -93,7 +93,7 @@ function HomeDodo() {
 
           </Grid.Column>
 
-          <Grid.Column mobile={7} tablet={6} computer={4} floated='left'>
+          <Grid.Column mobile={5} tablet={6} computer={4} floated='left'>
               <div>
             <div class="avatar2">	
                 <Image src={dodo1_scratch} size='large'/>
