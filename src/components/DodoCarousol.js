@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Grid, Image, } from 'semantic-ui-react'
 // import {Link} from 'react-router-dom'
 import browse_gallery_btn from '../assets/browse_gallery_btn.png'
@@ -12,7 +12,30 @@ import dc5 from '../assets/dc5.png'
 import './click.css'
 function DodoCarousol() {
 
+  const [clicked, setClicked]=useState(false)
 
+  const handleButtonClick =()=>
+  {
+    if(clicked===false)
+    {
+      setClicked(true)
+    }
+    else{
+      setClicked(false)
+    }
+  }
+
+  let message
+
+  if(clicked===true)
+  {
+    message = <div><p class="FuturaFont" style={{color:'#FE560C', fontSize:'20px', fontWeight:'bold'}}>
+    Coming Soon! Stay tuned!</p></div>
+  }
+  else
+  {
+    message = <div></div>
+  }
 
   return (
     <div style={{backgroundColor:'#0f0f0f', paddingBottom:'20px'}}>
@@ -156,15 +179,16 @@ function DodoCarousol() {
 
       <Grid.Row>
       <div className="buttonclick" style={{borderRadius:'10px'}}>
-        <div style={{boxShadow: 'rgba(50, 50, 93, 0.25) 1px 13px 27px 3px, rgba(0, 0, 0, 0.3) 0px 8px 16px 0px'}}>
+        <div style={{boxShadow: 'rgba(50, 50, 93, 0.25) 1px 13px 27px 3px, rgba(0, 0, 0, 0.3) 0px 8px 16px 0px'}} onClick={() => handleButtonClick()} >
         <Image src={browse_gallery_btn} />
         </div>
         </div>
+        
       </Grid.Row>
      
     
   </Grid>
-
+  {message}
   
 
     </div>
