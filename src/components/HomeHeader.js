@@ -1,11 +1,10 @@
 import React from 'react'
-import { Grid,Image } from 'semantic-ui-react'
+import { Grid,Image, } from 'semantic-ui-react'
 import {Link} from 'react-router-dom'
 
 import logo from '../assets/wasted_dodo_header.png'
-import discord from '../assets/discord.png'
-import rarible from '../assets/rarible.png'
-import opensea from '../assets/opensea.png'
+import opensea_logo from '../assets/opensea_logo.png'
+import rarible_logo from '../assets/rarible_logo.png'
 
 import './fonts.css'
 function HomeHeader({changeState}) {
@@ -65,22 +64,19 @@ function HomeHeader({changeState}) {
           <Grid.Column floated='right' mobile={8} tablet={6} computer={4}>  
   
           <Grid>
-              <Grid.Row columns={3} verticalAlign="middle">
-                  <Grid.Column only='tablet computer' tablet={4} computer={4} >
-                    <a href='https://discord.gg/aug6ttSW'>
-                      <Image src={discord} size='mini'/>
-                    </a>
-                  </Grid.Column>
+              <Grid.Row columns={2} verticalAlign="middle">
+                  
   
-                  <Grid.Column mobile={7} tablet={4} computer={4}>
+                  <Grid.Column mobile={8} tablet={8} computer={7}>
                   <a href="https://rarible.com/">
-                      <Image src={rarible} size='tiny'/>
+                      <Image src={rarible_logo} size='small'/>
+                      
                     </a>
                   </Grid.Column>
   
-                  <Grid.Column mobile={9} tablet={8} computer={8}>
+                  <Grid.Column mobile={8} tablet={8} computer={7}>
                     <a href="https://opensea.io/">
-                      <Image src={opensea} size='small'/>
+                      <Image src={opensea_logo} size='small'/>
                     </a>
                   </Grid.Column>
   
