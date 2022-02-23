@@ -45,8 +45,8 @@ function Scratch() {
                 <Grid.Row>
                     <Grid.Column>
                         <p style={{ color: 'grey' }}>It is the nest of the 8000 unique dodos, unfortunately they were a bit wasted from yesterday's party and were 
-        lost during their trip to the island of Malabu. </p>
-        <p style={{ color: 'grey' }}>Please buy one dodo and lead it back to here before winter ends &#128533;</p>
+        lost during their trip to the island of Malibu. </p>
+        <p style={{ color: 'grey' }}>Please help your favorite Dodos to lead it back home before winter ends! &#128533;</p>
                     </Grid.Column>
                     
                 </Grid.Row>
