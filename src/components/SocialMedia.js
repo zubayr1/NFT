@@ -3,18 +3,19 @@ import instagram_original from '../assets/instagram_original.png'
 import twitter_original from '../assets/twitter_original.png'
 import discord_original from '../assets/discord_original.png'
 import { Grid, Image } from 'semantic-ui-react'
-
+import Fade from 'react-reveal/Fade';
 function SocialMedia() {
   return (
     <div style={{backgroundColor:'black',}}>
-        <div style={{marginTop:'3%', paddingBottom:'20px', marginLeft:'20px', marginRight:'20px',  }}>
+        <div style={{marginTop:'5%', paddingBottom:'20px', marginLeft:'20px', marginRight:'20px',  }}>
             <div style={{borderRadius:'14px' ,boxShadow:'#baecff 0px 3px 6px, #baecff 0px 5px 10px'}}>
                 <div style={{marginTop:'10px', paddingBottom:'20px', }}>
               
                     <p class="FuturaFont" style={{color:'#FE560C', fontSize:'40px', fontWeight:'bolder'}}>
                         Join with Dodos in Social Media</p>
                    
-                       
+                        <Fade>
+          
                     <Grid>
                         <Grid.Row columns={4} verticalAlign="middle">
 
@@ -34,6 +35,9 @@ function SocialMedia() {
 
                            
                     </Grid>
+
+              
+        </Fade>
 
                  </div>
             </div>

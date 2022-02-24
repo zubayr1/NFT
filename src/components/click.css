@@ -28,3 +28,16 @@ buttonclick
     transition: .2s;
     box-shadow: #e05a0c 4px 8px 14px;
 }
+
+
+
+roadmap {
+   
+    cursor: pointer;
+}
+
+.roadmap:hover {
+    transform: scale(1.04,1.04);
+    transition: .2s;
+  
+}

@@ -3,6 +3,7 @@ import { Grid,  Image, } from 'semantic-ui-react'
 import dodo_story from '../assets/dodo_story.png'
 import dodo2_scratch from '../assets/dodo2_scratch.png'
 import  './floating3.css'
+import Fade from 'react-reveal/Fade';
 
 function DodoStory() {
 
@@ -12,13 +13,15 @@ function DodoStory() {
 
   return (
     <div style = {{ backgroundColor:"black"}}>
-      <div style = {{marginTop:'6%', paddingBottom:'30px'}}>
+      <div style = {{marginTop:'8%', paddingBottom:'30px'}}>
         <Grid style={{ marginTop:'10px'}} padded>
           
           <Grid.Row verticalAlign="middle">
             <Grid.Column only='tablet computer' tablet={4} computer={4} floated='right'>
             <div class="avatar3" style={{marginLeft:'4%'}}>
-                <Image src={dodo2_scratch} size='big' />
+                <Fade left>
+                  <Image src={dodo2_scratch} size='big' />
+                </Fade>
                 </div>
             </Grid.Column>
 
@@ -26,7 +29,10 @@ function DodoStory() {
               
                   <Grid style={{marginLeft:'2%', marginRight:'2%'}}>
                   <Grid.Row columns={2}>
-                    <Image src={dodo_story} size='big' />
+                      
+                      <Image src={dodo_story} size='big' />
+                    
+                    
                   </Grid.Row>
 
                   <Grid.Row>
@@ -42,13 +48,18 @@ function DodoStory() {
                         <Grid.Row>
                           
                           <div >
-                                <p class="FuturaFont" style={{color:'white', fontSize:'16px', textAlign:'justify', maxWidth:'100%'}}>
+
+                          <Fade right>
+                          <p class="FuturaFont" style={{color:'white', fontSize:'16px', textAlign:'justify', maxWidth:'100%'}}>
                                 Beyond the seas, there remains the mythical archipelago of Malibu and Mauritius, in the <p style={{display:"inline", color:'#FE560C'}}>Metaverse. </p> 
                                 They have flying mountains, giant ancient animals and birds, and of course, the <p style={{display:"inline", color:'#FE560C'}}>Coolest Dodos. </p> 
                                 Their only hobbies are to party wild, drink, smoke, and play poker till they are <p style={{display:"inline", color:'#FE560C'}}>super wasted. </p>  
                                 Some mornings, they are so intoxicated that they need guidance to return to their nests. 
                                 The secret voices of the Forests say they also host and attend wildest concerts in the Metaverse with <p style={{display:"inline", color:'#FE560C'}}>'Real People'! </p>
                                 </p>
+                          </Fade>
+                            
+                                
                               </div>
                          </Grid.Row>
                     </Grid>

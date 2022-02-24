@@ -1,6 +1,6 @@
 import React, {useState, useRef} from 'react'
 import HomeHeader from './HomeHeader';
-import { Grid,  Image,Form } from 'semantic-ui-react'
+import { Grid,  Image,Form, } from 'semantic-ui-react'
 import welcome_message from '../assets/welcome_message.png'
 import corrected_welcome from '../assets/corrected_welcome.png'
 import dodo1_scratch from '../assets/dodo1_scratch.png'
@@ -16,6 +16,8 @@ import Roadmap from './Roadmap';
 import BuyDodo from './BuyDodo';
 import Footer from './Footer';
 import SocialMedia from './SocialMedia';
+
+import Zoom from 'react-reveal/Zoom';
 
 function HomeDodo() {
   enableBodyScroll(document)
@@ -58,15 +60,15 @@ function HomeDodo() {
               
 
                 <div class='background-img' style={{marginTop:'2%'}}>
-                  <Image src={corrected_welcome} size='big' />
+                  <Image src={corrected_welcome} size='huge' />
                 </div>          
 
                 
                 <div class='background-img' style={{float:'center', marginTop:'2%'}}>
-                  <Image src={sorry} size='medium' />
+                  <Image src={sorry} size='large' />
                 </div> 
 
-                <Image src={dodo_intro} size='big' style={{marginTop:'5%'}}/>
+                <Image src={dodo_intro} size='big' style={{marginTop:'7%'}}/>
 
                 <Grid style={{marginTop:'4%'}}>
                   <Grid.Row only='computer tablet'>     
@@ -96,7 +98,12 @@ function HomeDodo() {
           <Grid.Column mobile={5} tablet={6} computer={4} floated='left'>
               <div>
             <div class="avatar2">	
-                <Image src={dodo1_scratch} size='large'/>
+
+            <Zoom>
+              <Image src={dodo1_scratch} size='large'/>
+            </Zoom>
+
+                
                 </div>
                 </div>
           </Grid.Column>
@@ -129,12 +136,14 @@ function HomeDodo() {
 
     </div>
 
-    <div>
+    <div style={{marginTop:'20px'}}>
 
       <DodoStory/>      
       </div>
 
-      <SocialMedia/>
+      
+
+        <SocialMedia/>
 
       <div ref={gallery}>
       <DodoCarousol/>

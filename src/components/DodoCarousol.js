@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { Grid, Image, } from 'semantic-ui-react'
 // import {Link} from 'react-router-dom'
 import browse_gallery_btn from '../assets/browse_gallery_btn.png'
+import Fade from 'react-reveal/Fade';
 
 import dc1 from '../assets/dc1.PNG'
 import dc2 from '../assets/dc2.png'
@@ -40,8 +41,8 @@ function DodoCarousol() {
   return (
     <div style={{backgroundColor:'#0f0f0f', paddingBottom:'20px'}}>
 
-
-      <div style={{marginLeft:'10px', marginRight:'10px', marginTop:"3%", marginBottom:'2%', }}>
+<Fade bottom>
+      <div style={{marginLeft:'10px', marginRight:'10px', marginTop:"7%", marginBottom:'2%', }}>
              <p class="FuturaFont" style={{color:'#ffffff', fontSize:'50px', fontWeight:'bolder'}}>
                 What's in <p style={{display:"inline", color:'#FE560C'}}>Dodo </p>Club</p>
              
@@ -55,6 +56,7 @@ function DodoCarousol() {
         </div>
 
         
+          
 
         <Grid padded centered>
       
@@ -188,6 +190,9 @@ function DodoCarousol() {
      
     
   </Grid>
+
+        </Fade>
+
   {message}
   
 
