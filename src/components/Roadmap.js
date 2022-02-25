@@ -182,17 +182,27 @@ export default function Roadmap() {
             <p>
               Mythical performance in the Metaverse: Just imagine. There are flying mountains and sky kissing trees. A place populated by mythical creatures. And your favourite popstar is performing there in our unique place. Club members will be directly invited. Club members can apply for free passes to perform themselves! Its time to show your talent. In the Metaverse!
 
-              Oh! And one more Thing!- Drunk Dodos is a family, always: As the club grows, all the members will be invited to our next projects, and members will be collaborated for their own projects in the Metaverse. 
-              Its time to rule Metaverse, as a family.
+              
             </p>
           </VerticalTimelineElement>
 
 
-
-
           <VerticalTimelineElement
-            iconStyle={{ background: 'linear-gradient(110deg, #030229 40%, #04030f 40%)', color: '#fff' }}
-          />
+            className="vertical-timeline-element--work roadmap"
+            iconStyle={{ background: 'linear-gradient(110deg, #030229 40%, #04030f 40%)', color: '#000' }}
+            contentStyle={{ background: '#000', color: '#fff', borderRadius:'14px' ,boxShadow:'#baecff 0px 3px 6px, #baecff 0px 5px 10px' }}
+            contentArrowStyle={{ borderRight: '7px solid  #baecff' }}
+            
+          >
+                        
+            <p>
+            Oh! And one more Thing!- Drunk Dodos is a family, always: As the club grows, all the members will be invited to our next projects, and members will be collaborated for their own projects in the Metaverse. 
+              Its time to rule Metaverse, as a family.
+              
+            </p>
+          </VerticalTimelineElement>
+
+
         </VerticalTimeline>
 
     </div>
