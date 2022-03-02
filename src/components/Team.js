@@ -27,6 +27,9 @@ function Team() {
             <div style={{marginLeft:'10px', marginRight:'10px', marginTop:"7%", marginBottom:'2%', }}>
                     <p class="FuturaFont" style={{color:'#ffffff', fontSize:'50px', fontWeight:'bolder'}}>
                         The Core Team</p>
+
+                        <p class="FuturaFont" style={{color:'#ffffff', fontSize:'20px', fontWeight:'bold'}}>
+                        The Dodos are maybe wasted, but not scammer!</p>
                     
                 </div>
                 
@@ -66,9 +69,16 @@ function Team() {
 
                                         <Grid.Row >
                                             <Grid>
-                                                <Grid.Row columns={1}>
+                                                <Grid.Row columns={2}>
                                                     <Grid.Column>
-                                                        <Image src={insta_bw} rounded size='mini'/>
+                                                        <a href="https://www.instagram.com/khabbab_zakaria/">
+                                                            <Image src={insta_bw} rounded size='mini'/>
+                                                        </a>
+                                                    </Grid.Column>
+                                                    <Grid.Column>
+                                                        <a href="https://twitter.com/itswinzak">
+                                                            <Image src={twitter_bw} rounded size='mini'/>
+                                                        </a>
                                                     </Grid.Column>
                                                 </Grid.Row>
                                             </Grid>
