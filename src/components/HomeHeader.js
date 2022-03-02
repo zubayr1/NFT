@@ -50,7 +50,9 @@ function HomeHeader({changeState}) {
                   </Grid.Column>
 
                   <Grid.Column  tablet={4} computer={4}>
-                    <p class="headerfont">Team</p>
+                    <div onClick={() => changeState('team')}>
+                      <p class="headerfont">Team</p>
+                    </div>
                   </Grid.Column>
   
               </Grid.Row>

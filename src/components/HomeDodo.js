@@ -18,6 +18,7 @@ import Footer from './Footer';
 import SocialMedia from './SocialMedia';
 
 import Zoom from 'react-reveal/Zoom';
+import Team from './Team';
 
 function HomeDodo() {
   enableBodyScroll(document)
@@ -26,6 +27,7 @@ function HomeDodo() {
   const home = useRef(null)
   const gallery = useRef(null)
   const roadmap = useRef(null)
+  const team = useRef(null)
 
   const changeState = (childdata) => {
     
@@ -35,6 +37,8 @@ function HomeDodo() {
       gallery.current.scrollIntoView({ behavior: 'smooth' }) 
     if(childdata==='roadmap')
       roadmap.current.scrollIntoView({ behavior: 'smooth' }) 
+    if(childdata==='team')
+      team.current.scrollIntoView({ behavior: 'smooth' }) 
   }
 
 
@@ -155,6 +159,11 @@ function HomeDodo() {
 
       <div style={{marginBottom:'20px', marginTop:'60px'}}>
       <BuyDodo/>
+      </div>
+
+
+      <div ref={team}>
+      <Team/>
       </div>
 
       
