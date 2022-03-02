@@ -108,15 +108,22 @@ function Team() {
                                             <Grid>
                                                 <Grid.Row centered columns={3}>
                                                     <Grid.Column>
-                                                        <Image src={github_bw} rounded size='mini'/>
+                                                        <a href="https://github.com/zubayr1">
+                                                            <Image src={github_bw} rounded size='mini'/>
+                                                        </a>
                                                     </Grid.Column>
 
                                                     <Grid.Column>
-                                                        <Image src={twitter_bw} rounded size='mini'/>
+                                                        <a href='https://twitter.com/zubayrkhalid5'>
+                                                            <Image src={twitter_bw} rounded size='mini'/>
+                                                        </a>
                                                     </Grid.Column>
 
                                                     <Grid.Column>
-                                                        <Image src={linkedin_bw} rounded size='mini'/>
+                                                        <a href='https://www.linkedin.com/in/zubayr-khalid-393257117/'>
+                                                            <Image src={linkedin_bw} rounded size='mini'/>
+                                                        </a>
+                                                       
                                                     </Grid.Column>
 
                                                 </Grid.Row>
@@ -174,7 +181,7 @@ function Team() {
 
                                     <Grid.Row>                                        
                                             <p class="FuturaFont" style={{color:'#ffffff', fontSize:'18px',}}>
-                                            Pr1T4M</p>
+                                            F1R3H3ART</p>
                                             
                                     </Grid.Row>
 
@@ -187,7 +194,10 @@ function Team() {
                                             <Grid>
                                                 <Grid.Row columns={1}>
                                                     <Grid.Column>
-                                                        <Image src={twitter_bw} rounded size='mini'/>
+                                                        <a href='https://twitter.com/pritam007joy?t=ag27hro2D2eJEk5CEa9uzQ&s=09'>
+                                                            <Image src={twitter_bw} rounded size='mini'/>
+                                                        </a>
+                                                        
                                                     </Grid.Column>
                                                 </Grid.Row>
                                             </Grid>
