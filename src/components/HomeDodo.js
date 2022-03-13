@@ -20,6 +20,7 @@ import SocialMedia from './SocialMedia';
 import Zoom from 'react-reveal/Zoom';
 import Team from './Team';
 import More from './More';
+import FAQ from './FAQ';
 
 function HomeDodo() {
   enableBodyScroll(document)
@@ -169,6 +170,10 @@ function HomeDodo() {
 
       <div>
         <More/>
+      </div>
+
+      <div>
+        <FAQ/>
       </div>
 
       <div>

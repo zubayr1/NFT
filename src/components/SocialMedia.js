@@ -2,6 +2,7 @@ import React from 'react'
 import instagram_original from '../assets/instagram_original.png'
 import twitter_original from '../assets/twitter_original.png'
 import discord_original from '../assets/discord_original.png'
+import youtubelogo from '../assets/youtubelogo.png'
 import { Grid, Image } from 'semantic-ui-react'
 import Fade from 'react-reveal/Fade';
 function SocialMedia() {
@@ -27,7 +28,7 @@ function SocialMedia() {
 
                                 <a href='https://twitter.com/dodo_drunk'><Image src={twitter_original} size='tiny'/></a>
                                 <a href='https://instagram.com/wasteddodoclub?utm_medium=copy_link'><Image src={instagram_original} size='tiny'/></a>
-                                    
+                                <a href='https://www.youtube.com/channel/UCukwOYiqSSrh1QQJZc958bQ'><Image src={youtubelogo} size='tiny'/></a>
                                  </Image.Group>
                                 </Grid.Column>                               
 
