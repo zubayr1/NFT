@@ -21,6 +21,7 @@ import Zoom from 'react-reveal/Zoom';
 import Team from './Team';
 import More from './More';
 import FAQ from './FAQ';
+import Mint from './Mint';
 
 function HomeDodo() {
   enableBodyScroll(document)
@@ -147,6 +148,10 @@ function HomeDodo() {
       <DodoStory/>      
       </div>
 
+
+      <div style={{marginBottom:'20px', marginTop:'60px'}}>
+        <Mint/>
+      </div>
       
 
         <SocialMedia/>
@@ -158,6 +163,10 @@ function HomeDodo() {
       <div style={{marginBottom:'20px', marginTop:'30px'}} ref={roadmap}>
         <Roadmap />
       </div> 
+
+      <div style={{marginBottom:'20px', marginTop:'60px'}}>
+      <Mint/>
+      </div>
 
       <div style={{marginBottom:'20px', marginTop:'60px'}}>
       <BuyDodo/>
