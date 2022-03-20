@@ -4,10 +4,10 @@ import { Grid, Image, } from 'semantic-ui-react'
 import browse_gallery_btn from '../assets/browse_gallery_btn.png'
 import Fade from 'react-reveal/Fade';
 
-import dc1 from '../assets/dc1.jpg'
+import dc1 from '../assets/dc1.png'
 import dc2 from '../assets/dc2.png'
 import dc3 from '../assets/dc3.png'
-import dc4 from '../assets/dc4.jpg'
+import dc4 from '../assets/dc4.png'
 import dc5 from '../assets/dc5.png'
 
 import './click.css'

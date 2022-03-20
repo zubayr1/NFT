@@ -1,7 +1,7 @@
 import React from 'react'
 import { Grid,  Image, } from 'semantic-ui-react'
 import dodo_story from '../assets/dodo_story.png'
-import dodo2_scratch from '../assets/dodo2_scratch.png'
+import dodo3_scratch from '../assets/dodo3_scratch.png'
 import  './floating3.css'
 import Fade from 'react-reveal/Fade';
 
@@ -20,7 +20,7 @@ function DodoStory() {
             <Grid.Column only='tablet computer' tablet={4} computer={4} floated='right'>
             <div class="avatar3" style={{marginLeft:'4%'}}>
                 <Fade left>
-                  <Image src={dodo2_scratch} size='big' />
+                  <Image src={dodo3_scratch} size='big' />
                 </Fade>
                 </div>
             </Grid.Column>
