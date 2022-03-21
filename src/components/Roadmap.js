@@ -75,7 +75,7 @@ export default function Roadmap() {
             <h3 className="vertical-timeline-element-title">30%</h3>
             
             <p style={{fontSize:'14px'}}>
-              You can create your own design. If the editorial team likes it, it will be auctioned in Drunk Dodo page and will be promoted via all Drunk Dodo social media. You keep 90% royalty if your NFT gets sold.
+              You can create your own design. If the editorial team likes it, it will be auctioned in Wasted Dodo page and will be promoted via all Wasted Dodo social media. You keep 90% royalty if your NFT gets sold.
 
             </p>
 
@@ -162,7 +162,7 @@ export default function Roadmap() {
             <h3 className="vertical-timeline-element-title">90%</h3>
             
             <p style={{fontSize:'14px'}}>
-              Live your wildest dreams! Attend the wildest drunk parties of Dodos in our base 'Dodos' Nest' in the Metaverse. Long nights of party and poker and lets bring Vegas in Metaverse!
+              Live your wildest dreams! Attend the wildest wasted parties of Dodos in our base 'Dodos' Nest' in the Metaverse. Long nights of party and poker and lets bring Vegas in Metaverse!
 
             </p>
           </VerticalTimelineElement>
@@ -196,7 +196,7 @@ export default function Roadmap() {
           >
                         
           <p style={{fontSize:'14px'}}>
-            Oh! And one more Thing!- Drunk Dodos is a family, always: As the club grows, all the members will be invited to our next projects, and members will be collaborated for their own projects in the Metaverse. 
+            Oh! And one more Thing!- Wasted Dodos is a family, always: As the club grows, all the members will be invited to our next projects, and members will be collaborated for their own projects in the Metaverse. 
               Its time to rule Metaverse, as a family.
               
             </p>
