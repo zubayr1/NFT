@@ -1,5 +1,6 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade';
+import Wallet from './Wallet';
 
 function Mint() {
   return (
@@ -12,6 +13,10 @@ function Mint() {
                       <Fade bottom>
                         <p class="FuturaFont" style={{color:'#2637a6', fontSize:'40px', fontWeight:'bolder', fontStyle: 'italic'}}>
                                Minting will be LIVE soon!!</p>
+
+
+                          <Wallet/>
+
 
                         
                       </Fade>
