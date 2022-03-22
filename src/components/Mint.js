@@ -1,6 +1,6 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade';
-import Wallet from './Wallet';
+// import Wallet from './Wallet';
 
 function Mint() {
   return (
@@ -15,7 +15,7 @@ function Mint() {
                                Minting will be LIVE soon!!</p>
 
 
-                          <Wallet/>
+                          {/* <Wallet/> */}
 
 
                         
