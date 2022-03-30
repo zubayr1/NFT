@@ -1,15 +1,20 @@
 import React, {useState, } from 'react'
 import { Button, Form, Grid, Message } from 'semantic-ui-react'
 import {abi, address} from './SmartContract';
-import { ethers } from 'ethers'
+import { ethers, utils } from 'ethers'
 
-function Whitelisting(props) {
+function WhiteMint(props) {
 
     const defaultAccount = props.dataParentToChild
     const [check, setCheck] = useState(0)
     const [hash, setHash] = useState('')
 
     const { ethereum } = window
+
+    
+    const [to, setTo] = useState('')
+    const [amount, setamount] = useState(0)
+
 
    
 
@@ -32,11 +37,17 @@ function Whitelisting(props) {
         {
             setCheck(3)
         }
-        else if (check!==1 && defaultAccount!==null )
+        else if (check!==1 && defaultAccount!==null && to!=='' && amount!==0)
         {
+            var value = 0.03*amount;
+
+            
             
             try{
-                await SmartContract.whitelistUser(
+                await SmartContract.mintFromWhiteList(
+                    to,
+                    amount,
+                    {value : utils.parseEther(value.toString(10))}
                     )
                     .then(function(transaction) {
                         setHash(transaction.hash)
@@ -69,8 +80,8 @@ function Whitelisting(props) {
         message =  <div>
             <Message
                 success
-                header='Whitelisted'
-                content='Sender Successfully whitelisted!'
+                header='minted'
+                content='Tokens minted successfully!'
             />
         </div>
       }
@@ -133,38 +144,53 @@ function Whitelisting(props) {
       }
       
 
+
   return (
     <div>
         <Grid centered columns={1}>
+            <Grid.Row>
+            <p class="FuturaFont" style={{color:'#ffffff', fontSize:'30px', fontWeight:'bold'}}>
+                    White Mint
+                    </p>
+            </Grid.Row>
 
-        
-        <Grid.Row>
-        <p class="FuturaFont" style={{color:'#FE560C', fontSize:'30px', fontWeight:'bold'}}>
-                Whitelist Yourself!
-                </p>
-        </Grid.Row>
+            <Grid.Row>
+            <Grid.Column computer={8} tablet={12} mobile={16}>
 
-        <Grid.Row>
-        <Grid.Column computer={8} tablet={12} mobile={16}>
+                <Form inverted>
+                    <Form.Field>
+                    <label>sender</label>
+                    <div style={{ borderRadius:'50px',boxShadow:'0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 14px 0 #daeaf0'}}>
+                    <input defaultValue={defaultAccount} disabled style={{borderRadius:'50px', backgroundColor:'#0F0F0F', color:'white'}}/>
+                    </div>
+                    </Form.Field>
 
-            <Form inverted>
-                <Form.Field>
-                <label>sender</label>
-                <div style={{ borderRadius:'50px',boxShadow:'0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 14px 0 #daeaf0'}}>
-                <input defaultValue={defaultAccount} disabled style={{borderRadius:'50px', backgroundColor:'#0F0F0F', color:'white'}}/>
-                </div>
-                </Form.Field>
+                    <Form.Field>
+                    <label>to</label>
+                    <div style={{ borderRadius:'50px',boxShadow:'0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 14px 0 #daeaf0'}}>
+                    <input onChange={e => setTo(e.target.value)} style={{borderRadius:'50px', backgroundColor:'#0F0F0F', color:'white'}}/>
+                    </div>
+                    </Form.Field>
+
+                    <Form.Field>
+                    <label>mint amount</label>
+                    <div style={{ borderRadius:'50px',boxShadow:'0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 14px 0 #daeaf0'}}>
+                    <input onChange={e => setamount(e.target.value)} style={{borderRadius:'50px', backgroundColor:'#0F0F0F', color:'white'}}/>
+                    </div>
+                    </Form.Field>
+                    
+                    <Button floated='right' inverted onClick={btnHandler}>White Mint</Button>
+                </Form>
+
+            </Grid.Column>
+            </Grid.Row>
+
+
+            <Grid.Row>
+                {message}
+            </Grid.Row>
+
                 
-                <Button floated='right' inverted onClick={btnHandler}>Whitelist</Button>
-            </Form>
-
-        </Grid.Column>
-        </Grid.Row>
-
-
-        <Grid.Row computer={8} tablet={12} mobile={2}>
-            {message}
-        </Grid.Row>
 
         </Grid>
 
@@ -173,4 +199,4 @@ function Whitelisting(props) {
   )
 }
 
-export default Whitelisting
+export default WhiteMint

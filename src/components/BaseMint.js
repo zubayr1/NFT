@@ -1,20 +1,36 @@
-import React, {useState} from 'react'
-import {  BigNumber } from 'ethers';
- 
-import SmartContract from './SmartContract';
+import React, {useState, } from 'react'
 import { Button, Form, Grid, Message } from 'semantic-ui-react'
+import {abi, address} from './SmartContract';
+import { ethers, utils } from 'ethers'
 
 function BaseMint(props) {
 
     const defaultAccount = props.dataParentToChild
+    const [check, setCheck] = useState(0)
+    const [hash, setHash] = useState('')
+
+    const { ethereum } = window
+
     
     const [to, setTo] = useState('')
     const [amount, setamount] = useState(0)
 
-    const [check, setCheck] = useState(0)
+
+   
 
     const btnHandler = async(event) =>
       {
+
+        const provider = new ethers.providers.Web3Provider(ethereum)
+        const signer = provider.getSigner()
+
+
+        const SmartContract = new ethers.Contract(
+            address,
+            abi,
+            signer
+          )
+
         event.preventDefault();
 
         if(defaultAccount===null)
@@ -23,26 +39,37 @@ function BaseMint(props) {
         }
         else if (check!==1 && defaultAccount!==null && to!=='' && amount!==0)
         {
-            await SmartContract.methods.mint(to, BigNumber.from(amount))
-            .send({
-                from: defaultAccount,
-                
-            })
-                .on("confirmation", function () {
-                    setCheck(1)
-                })
-                .on("error", async function () {
-                    setCheck(2)
-                });
+            var value = 0.07*amount;
 
+            
+            
+            try{
+                await SmartContract.mint(
+                    to,
+                    amount,
+                    {value : utils.parseEther(value.toString(10))}
+                    )
+                    .then(function(transaction) {
+                        setHash(transaction.hash)
 
-
+                        
+                        setCheck(1)
+                    });
+                    
+            }
+            catch (error)
+            {
+                setCheck(2)
+            }
+            
         }
 
       }
 
-      let message
 
+
+      let message 
+      
       if(check===0)
       {
         message =  <div>
@@ -53,8 +80,8 @@ function BaseMint(props) {
         message =  <div>
             <Message
                 success
-                header='Whitelisted'
-                content="You're successfully whitelisted!"
+                header='minted'
+                content='Tokens minted successfully!'
             />
         </div>
       }
@@ -79,59 +106,95 @@ function BaseMint(props) {
           </div>
       }
 
+    
+      let hashmessage
 
+      if(check===1)
+      {
+          hashmessage = <div>
 
-  return (
-    <div>
-        
-            <Grid centered columns={1}>
+                <Grid centered columns={1}>
 
-
-                <Grid.Row>
-                <p class="FuturaFont" style={{color:'#FE560C', fontSize:'30px', fontWeight:'bold'}}>
-                        Public Mint
-                        </p>
-                </Grid.Row>
-
+               
                 <Grid.Row>
                 <Grid.Column computer={8} tablet={12} mobile={16}>
 
                     <Form inverted>
                         <Form.Field>
-                        <label>sender</label>
+                        <label>Transaction hash</label>
                         <div style={{ borderRadius:'50px',boxShadow:'0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 14px 0 #daeaf0'}}>
-                        <input defaultValue={defaultAccount} disabled style={{borderRadius:'50px', backgroundColor:'#0F0F0F', color:'white'}}/>
-                        </div>
-                        </Form.Field>
-
-                        <Form.Field>
-                        <label>to</label>
-                        <div style={{ borderRadius:'50px',boxShadow:'0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 14px 0 #daeaf0'}}>
-                        <input onChange={e => setTo(e.target.value)} style={{borderRadius:'50px', backgroundColor:'#0F0F0F', color:'white'}}/>
-                        </div>
-                        </Form.Field>
-
-                        <Form.Field>
-                        <label>mint amount</label>
-                        <div style={{ borderRadius:'50px',boxShadow:'0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 14px 0 #daeaf0'}}>
-                        <input onChange={e => setamount(e.target.value)} style={{borderRadius:'50px', backgroundColor:'#0F0F0F', color:'white'}}/>
+                        <input defaultValue={hash} disabled style={{borderRadius:'50px', backgroundColor:'#0F0F0F', color:'white'}}/>
                         </div>
                         </Form.Field>
                         
-                        <Button floated='right' inverted onClick={btnHandler}>Mint</Button>
                     </Form>
 
                 </Grid.Column>
                 </Grid.Row>
 
 
-                <Grid.Row>
-                    {message}
-                </Grid.Row>
-
-                    
-
                 </Grid>
+
+          </div>
+      }
+      else
+      {
+          hashmessage = 
+          <div></div>
+      }
+      
+
+
+  return (
+    <div>
+        <Grid centered columns={1}>
+            <Grid.Row>
+            <p class="FuturaFont" style={{color:'#FE560C', fontSize:'30px', fontWeight:'bold'}}>
+                    Public Mint
+                    </p>
+            </Grid.Row>
+
+            <Grid.Row>
+            <Grid.Column computer={8} tablet={12} mobile={16}>
+
+                <Form inverted>
+                    <Form.Field>
+                    <label>sender</label>
+                    <div style={{ borderRadius:'50px',boxShadow:'0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 14px 0 #daeaf0'}}>
+                    <input defaultValue={defaultAccount} disabled style={{borderRadius:'50px', backgroundColor:'#0F0F0F', color:'white'}}/>
+                    </div>
+                    </Form.Field>
+
+                    <Form.Field>
+                    <label>to</label>
+                    <div style={{ borderRadius:'50px',boxShadow:'0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 14px 0 #daeaf0'}}>
+                    <input onChange={e => setTo(e.target.value)} style={{borderRadius:'50px', backgroundColor:'#0F0F0F', color:'white'}}/>
+                    </div>
+                    </Form.Field>
+
+                    <Form.Field>
+                    <label>mint amount</label>
+                    <div style={{ borderRadius:'50px',boxShadow:'0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 14px 0 #daeaf0'}}>
+                    <input onChange={e => setamount(e.target.value)} style={{borderRadius:'50px', backgroundColor:'#0F0F0F', color:'white'}}/>
+                    </div>
+                    </Form.Field>
+                    
+                    <Button floated='right' inverted onClick={btnHandler}>Mint</Button>
+                </Form>
+
+            </Grid.Column>
+            </Grid.Row>
+
+
+            <Grid.Row>
+                {message}
+            </Grid.Row>
+
+                
+
+        </Grid>
+
+        {hashmessage}
     </div>
   )
 }

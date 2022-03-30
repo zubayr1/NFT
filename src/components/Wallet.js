@@ -2,10 +2,15 @@ import React, {useState, } from 'react'
 import { Button,  Grid, Message } from 'semantic-ui-react'
 import BaseMint from './BaseMint';
 import Whitelisting from './Whitelisting';
+import WhiteMint from './Whitemint';
 
 function Wallet() {
 
-    
+    const [whitelistcheck, setWhitelistcheck] = useState(0)
+    const [basemintcheck, setBasemintcheck] = useState(0)
+    const [whitemintcheck, setWhitemintcheck] = useState(0)
+
+
 
     const [defaultAccount, setDefaultAccount] = useState(null);
 
@@ -37,7 +42,70 @@ function Wallet() {
 		setDefaultAccount(newAccount);
 	}
 
+    const whitelisthandler = () =>
+    {
+        setWhitelistcheck((whitelistcheck+1)%2)
+    }
+
+    let whitelistcomponent
+
+    if(whitelistcheck===1)
+    {
+        whitelistcomponent = <div>
+            <Whitelisting dataParentToChild = {defaultAccount}/>
+        </div>
+    }
+    else{
+        whitelistcomponent = <div>
+            
+        </div>
+    }
+
+
+
+    const whiteminthandler = () =>
+    {
+        setWhitemintcheck((whitemintcheck+1)%2)
+    }
+
+    let whitemintcomponent
+
+    if(whitemintcheck===1)
+    {
+        whitemintcomponent = <div>
+            <WhiteMint dataParentToChild = {defaultAccount}/>
+        </div>
+    }
+    else{
+        whitemintcomponent = <div>
+            
+        </div>
+    }
     
+
+
+
+    const baseminthandler = () =>
+    {
+        setBasemintcheck((basemintcheck+1)%2)
+    }
+
+    let basemintcomponent
+
+    if(basemintcheck===1)
+    {
+        basemintcomponent = <div>
+            <BaseMint dataParentToChild = {defaultAccount}/>
+        </div>
+    }
+    else{
+        basemintcomponent = <div>
+            
+        </div>
+    }
+
+
+
 
     let walletmessage
 
@@ -54,10 +122,6 @@ function Wallet() {
                 />
         </div>
     }
-
-
-
-      
 
       
 
@@ -82,9 +146,25 @@ function Wallet() {
 
     </Grid>
 
-    <Whitelisting dataParentToChild = {defaultAccount}/>
+        <div>
+            <Button inverted color='blue' onClick={whitelisthandler}>Get Whitelisted</Button>
+        </div>
 
-    <BaseMint dataParentToChild = {defaultAccount}/>
+    {whitelistcomponent}
+
+
+    <div style={{marginTop: '20px'}}>
+            <Button inverted onClick={whiteminthandler}>Go for White Mint</Button>
+        </div>
+
+    {whitemintcomponent}
+
+
+    <div style={{marginTop: '20px'}}>
+            <Button inverted color='green' onClick={baseminthandler}>Go for Public Mint</Button>
+        </div>
+
+    {basemintcomponent}
         
     </div>
   )
