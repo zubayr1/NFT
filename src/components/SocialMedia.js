@@ -24,7 +24,7 @@ function SocialMedia() {
 
                                 <Image.Group >
                                 
-                                <a href='https://discord.gg/aug6ttSW'><Image src={discord_original} size='small'/></a>
+                                <a href='https://discord.gg/s7W3EFtVNN'><Image src={discord_original} size='small'/></a>
 
                                 <a href='https://twitter.com/dodo_drunk'><Image src={twitter_original} size='tiny'/></a>
                                 <a href='https://instagram.com/wasteddodoclub?utm_medium=copy_link'><Image src={instagram_original} size='tiny'/></a>

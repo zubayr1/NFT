@@ -49,7 +49,7 @@ function Footer() {
                             </Grid.Column>
 
                             <Grid.Column mobile={5} tablet={3} computer={3}>
-                            <a href='https://discord.gg/aug6ttSW'>
+                            <a href='https://discord.gg/s7W3EFtVNN'>
                             <Image src={discord_footer} size='mini'/>
                             </a>
                             </Grid.Column>
