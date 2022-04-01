@@ -18,7 +18,7 @@ function SocialMedia() {
                         <Fade>
           
                     <Grid>
-                        <Grid.Row columns={4} verticalAlign="middle">
+                        <Grid.Row columns={4} verticalAlign="middle" only='computer tablet'>
 
                                 <Grid.Column  tablet={16} computer={16} floated='right'>
 
@@ -32,7 +32,25 @@ function SocialMedia() {
                                  </Image.Group>
                                 </Grid.Column>                               
 
-                        </Grid.Row>                               
+                        </Grid.Row>          
+
+
+
+                        <Grid.Row columns={4} verticalAlign="middle" only='mobile'>
+
+                                <Grid.Column mobile={16} floated='right'>
+
+                                <Image.Group >
+                                
+                                <a href='https://discord.gg/s7W3EFtVNN'><Image src={discord_original} size='tiny'/></a>
+
+                                <a href='https://twitter.com/dodo_drunk'><Image src={twitter_original} size='mini'/></a>
+                                <a href='https://instagram.com/wasteddodoclub?utm_medium=copy_link'><Image src={instagram_original} size='mini'/></a>
+                                <a href='https://www.youtube.com/channel/UCukwOYiqSSrh1QQJZc958bQ'><Image src={youtubelogo} size='mini'/></a>
+                                 </Image.Group>
+                                </Grid.Column>                               
+
+                        </Grid.Row>                          
 
                            
                     </Grid>
