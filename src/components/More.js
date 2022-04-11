@@ -11,7 +11,7 @@ function More() {
             Wasted Dodo will be More than just NFTs...
         </p>
         <p class="FuturaFont" style={{color:'#ffffff', fontSize:'20px', fontWeight:'bold'}}>
-            A significant amount will be allocated in developing the multiplayer game: The Malibu in Metaverse, as well as buying lands.
+            A significant amount will be allocated in developing the Dodo's Nest: The Malibu in Metaverse, as well as buying lands.
             As the project grows, more budget will be allocated for this purpose.
         </p>
 
