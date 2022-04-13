@@ -145,7 +145,7 @@ export default function Roadmap() {
             <h3 className="vertical-timeline-element-title">75%</h3>
             
             <p style={{fontSize:'14px'}}>
-              100,000$ will be donated to different NGOs working for Children Welfare and to Save Endangered Species like our favorite Dodos. It will be discussed with the most active members of the Club.
+              100,000$ will be donated to different NGOs working for Children Welfare and to Save Endangered Species. It will be discussed with the most active members of the Club.
             </p>
           </VerticalTimelineElement>
 
