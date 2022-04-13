@@ -2,6 +2,7 @@ import './App.css';
 import {BrowserRouter as Router, Routes , Route} from 'react-router-dom'
 import Scratch from './components/Scratch.js';
 import HomeDodo from './components/HomeDodo';
+import PageNotFound from './components/PageNotFound';
 // import AllDodos from './components/AllDodos';
 // import Reachus from './components/Reachus';
 
@@ -14,7 +15,7 @@ function App() {
                 <Route exact path="/home" element={<HomeDodo/>}/>
                 {/* <Route exact path="/alldodos" element={<AllDodos/>}/>  
                 <Route exact path="/reachus" element={<Reachus/>}/>      */}
-                
+                <Route path="*" element={<PageNotFound/>} />
               </Routes >
 
 
