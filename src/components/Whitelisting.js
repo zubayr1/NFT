@@ -11,6 +11,7 @@ function Whitelisting(props) {
 
     const { ethereum } = window
 
+    const [whitelistAddress, setWhitelistAddress] = useState('')
    
 
     const btnHandler = async(event) =>
@@ -36,7 +37,7 @@ function Whitelisting(props) {
         {
             
             try{
-                await SmartContract.whitelistUser(
+                await SmartContract.whitelistUser(whitelistAddress
                     )
                     .then(function(transaction) {
                         setHash(transaction.hash)
@@ -70,7 +71,7 @@ function Whitelisting(props) {
             <Message
                 success
                 header='Whitelisted'
-                content='Sender Successfully whitelisted!'
+                content='Address Successfully whitelisted!'
             />
         </div>
       }
@@ -140,7 +141,7 @@ function Whitelisting(props) {
         
         <Grid.Row>
         <p class="FuturaFont" style={{color:'#FE560C', fontSize:'30px', fontWeight:'bold'}}>
-                Whitelist Yourself!
+                Whitelist Address!
                 </p>
         </Grid.Row>
 
@@ -151,7 +152,7 @@ function Whitelisting(props) {
                 <Form.Field>
                 <label>sender</label>
                 <div style={{ borderRadius:'50px',boxShadow:'0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 14px 0 #daeaf0'}}>
-                <input defaultValue={defaultAccount} disabled style={{borderRadius:'50px', backgroundColor:'#0F0F0F', color:'white'}}/>
+                <input onChange={(e)=> setWhitelistAddress(e.target.value)}  style={{borderRadius:'50px', backgroundColor:'#0F0F0F', color:'white'}}/>
                 </div>
                 </Form.Field>
                 
