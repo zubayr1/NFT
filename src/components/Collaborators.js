@@ -7,11 +7,13 @@ function Collaborators() {
 
     let data =[
       {'id': 1, 'name':'Sarah', 'amount': 500},
-      {'id': 2, 'name':'Zake', 'amount': 250},
+      {'id': 2, 'name':'Zake', 'amount': 100},
       {'id': 3, 'name':'Debarchan', 'amount': 100},
       {'id': 4, 'name':'Khwab', 'amount': 500},
       {'id': 5, 'name':'Badhan', 'amount': 100},
-      {'id': 6, 'name':'Winter', 'amount': 250},
+      {'id': 6, 'name':'Ujjval', 'amount': 300},
+      {'id': 7, 'name':'Rupam', 'amount': 100},
+      {'id': 6, 'name':'OptimasP', 'amount': 50},
     ]
 
   return (
@@ -29,7 +31,7 @@ function Collaborators() {
 
         <h3>Dodos give a heartful thanks to all our contributors!</h3>
         <p>Find the Collaborator contract in Etherscan at address: <p style={{display:"inline", color:'#FE560C'}}>
-          0xe24ac870179127075A54dE5129069698Cc011C41 </p> </p> 
+        0x3C2d5237a40269730e10b2CBf6D0E8ec54d17EDa </p> </p> 
         <Table unstackable>
             <Table.Header>
             <Table.Row>
