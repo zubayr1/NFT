@@ -15,6 +15,10 @@ function Collaborators() {
       {'id': 7, 'name':'Rupam', 'amount': 100},
       {'id': 8, 'name':'OptimasP', 'amount': 50},
       {'id': 9, 'name':'Aditto', 'amount': 100},
+      {'id': 10, 'name':'Zubayr', 'amount': 700},
+      {'id': 11, 'name':'Pero', 'amount': 1000},
+      {'id': 12, 'name':'Bitan', 'amount': 25},
+      {'id': 13, 'name':'Pritam', 'amount': 50},
     ]
 
   return (
