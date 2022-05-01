@@ -31,13 +31,13 @@ function Scratchheader() {
                 </Grid.Column>
 
                 <Grid.Column mobile={5} tablet={5} computer={6}>
-                <a href="https://rarible.com/">
+                <a href="https://rarible.com/collection/0x9f26dfa739791efe3f899efc0bf07bf409cd6543/items">
                     <Image src={rarible} size='tiny'/>
                   </a>
                 </Grid.Column>
 
                 <Grid.Column mobile={7} tablet={7} computer={6}>
-                  <a href="https://opensea.io/">
+                  <a href="https://opensea.io/collection/wasteddodo">
                     <Image src={opensea} size='small'/>
                   </a>
                 </Grid.Column>

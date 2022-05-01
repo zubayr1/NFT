@@ -70,14 +70,14 @@ function HomeHeader({changeState}) {
                   
   
                   <Grid.Column mobile={8} tablet={8} computer={7}>
-                  <a href="https://rarible.com/">
+                  <a href="https://rarible.com/collection/0x9f26dfa739791efe3f899efc0bf07bf409cd6543/items">
                       <Image src={rarible_logo} size='small'/>
                       
                     </a>
                   </Grid.Column>
   
                   <Grid.Column mobile={8} tablet={8} computer={7}>
-                    <a href="https://opensea.io/">
+                    <a href="https://opensea.io/collection/wasteddodo">
                       <Image src={opensea_logo} size='small'/>
                     </a>
                   </Grid.Column>
