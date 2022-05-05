@@ -150,7 +150,7 @@ function BaseMint(props) {
         <Grid centered columns={1}>
             <Grid.Row>
             <p class="FuturaFont" style={{color:'#FE560C', fontSize:'30px', fontWeight:'bold'}}>
-                    Public Mint
+                    Public Mint only at 0.002 eth (only for TODAY!!)
                     </p>
             </Grid.Row>
 
