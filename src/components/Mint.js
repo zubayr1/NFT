@@ -12,7 +12,7 @@ function Mint() {
 
                       <Fade bottom>
                         <p class="FuturaFont" style={{color:'#2637a6', fontSize:'40px', fontWeight:'bolder', fontStyle: 'italic'}}>
-                               Pre Sale will be LIVE soon!!</p>
+                               Pre Sale is LIVE!!</p>
 
 
                           <Wallet/>
