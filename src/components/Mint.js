@@ -1,6 +1,8 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade';
 import Wallet from './Wallet';
+import metal_dodo from '../assets/metal_dodo.PNG'
+import { Grid, Image, } from 'semantic-ui-react'
 
 function Mint() {
   return (
@@ -17,6 +19,13 @@ function Mint() {
 
                           <Wallet/>
 
+                          <Grid centered>
+
+                          <p class="FuturaFont" style={{color:'#FE560C', fontSize:'16px',}}>
+                              Metallic Dodo on Auction!!</p>
+                          <Image src={metal_dodo} r/>
+
+                          </Grid>
 
                         
                       </Fade>
