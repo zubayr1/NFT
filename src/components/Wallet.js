@@ -1,8 +1,9 @@
 import React, {useState, } from 'react'
-import { Button,  Grid, Message } from 'semantic-ui-react'
+import { Button,  Grid, Message, Image } from 'semantic-ui-react'
 import BaseMint from './BaseMint';
 import Whitelisting from './Whitelisting';
 // import WhiteMint from './Whitemint';
+import metal_dodo from '../assets/metal_dodo.PNG'
 
 function Wallet() {
 
@@ -133,6 +134,12 @@ function Wallet() {
 
         <Grid.Row>
             <div>
+                <div style={{marginBottom:'10px'}}>
+            <p class="FuturaFont" style={{color:'#FE560C', fontSize:'30px',}}>
+                                Metallic Dodo on Auction!!</p>
+
+                <Image src={metal_dodo} size='large'/>
+                </div>
                 <Button inverted color='orange' onClick={connectwallethandler}>Connect to metamask</Button>
             </div>
         </Grid.Row>
@@ -165,6 +172,8 @@ function Wallet() {
         </div>
 
     {basemintcomponent}
+
+    
         
     </div>
   )
