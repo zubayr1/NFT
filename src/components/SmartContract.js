@@ -1,5 +1,5 @@
 // import web3 from './web3';
-const address = '0x510d6bD8a6e2B9fd1525b2Eedd6e00845440FDA6';
+const address = '0x9f26Dfa739791EFe3F899Efc0bf07bF409cD6543';
 const abi =  [
    {
       "inputs":[
@@ -903,6 +903,5 @@ const abi =  [
       "stateMutability":"payable",
       "type":"function"
    }
-];
-
+]
   export  {abi, address};

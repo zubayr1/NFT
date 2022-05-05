@@ -39,7 +39,7 @@ function BaseMint(props) {
         }
         else if (check!==1 && defaultAccount!==null && to!=='' && amount!==0)
         {
-            var value = 0.07*amount;
+            var value = 0.02*amount;
 
             
             
