@@ -18,6 +18,12 @@ import github_bw from '../assets/github_bw.png'
 import twitter_bw from '../assets/twitter_bw.png'
 import linkedin_bw from '../assets/linkedin_bw.png'
 
+
+import elmelly from '../assets/elmelly.png'
+import kevin from '../assets/kevin.png'
+import yao from '../assets/yao.png'
+import karina from '../assets/karina.png'
+
 function Team() {
   return (
     <div>
@@ -412,6 +418,130 @@ function Team() {
 
                    
                 </Grid>
+
+
+                
+                
+                <Grid padded centered>
+
+                    <Grid.Row>
+                    <p class="FuturaFont" style={{color:'#ffffff', fontSize:'40px', fontWeight:'bolder'}}>
+                        Our Partners!</p>
+                    </Grid.Row>
+                    
+                    <Grid.Row  > 
+                        
+                        <Grid.Column mobile={16} tablet={14} computer={16}>  
+
+                        <Grid centered>
+                            <Grid.Row columns={5} >
+
+
+                                <Grid.Column mobile={8} tablet={3} computer={3} >                   
+                                <Grid centered padded>
+                                    <Grid.Row>
+                                        <div className="click" style={{borderRadius:'20px' }}>
+                                        <div  style={{borderRadius:'20px' ,boxShadow:'#baecff 0px 4px 10px'}}>
+                                    <div  style={{border: '2px solid #f7f5f5', borderRadius:'14px', padding:'5px',}}>
+                                    <Image src={elmelly} rounded/>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </Grid.Row>
+
+                                    <Grid.Row>                                        
+                                            <p class="FuturaFont" style={{color:'#ffffff', fontSize:'18px',}}>
+                                            El Melly</p>
+                                    </Grid.Row>
+
+                                        
+                                    </Grid>
+                                </Grid.Column>
+
+
+
+                                <Grid.Column mobile={8} tablet={3} computer={3}>
+                                <Grid centered padded>
+                                    <Grid.Row>
+                                    <div className="click" style={{borderRadius:'20px' }}>
+                                    <div style={{borderRadius:'20px' ,boxShadow:'#baecff 0px 4px 10px'}}>
+                                    <div style={{border: '2px solid #f7f5f5', borderRadius:'14px', padding:'5px'}}>
+                                    <Image src={kevin} rounded/>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </Grid.Row>
+
+                                
+                                <Grid.Row>                                        
+                                            <p class="FuturaFont" style={{color:'#ffffff', fontSize:'18px',}}>
+                                            Kevin</p>
+                                            
+                                    </Grid.Row>
+                                                                   
+
+                                </Grid>
+                                </Grid.Column>
+
+
+
+                                <Grid.Column mobile={8} tablet={3} computer={3}>
+                                <Grid centered padded>
+                                    <Grid.Row>
+                                    <div className="click" style={{borderRadius:'20px' }}>
+                                    <div style={{borderRadius:'20px' ,boxShadow:'#baecff 0px 4px 10px'}}>
+                                    <div style={{border: '2px solid #f7f5f5', borderRadius:'14px', padding:'5px'}}>
+                                    <Image src={karina} rounded/>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </Grid.Row>
+
+                                    <Grid.Row>                                        
+                                            <p class="FuturaFont" style={{color:'#ffffff', fontSize:'18px',}}>
+                                            Karina</p>
+                                            
+                                    </Grid.Row>
+
+                                    
+
+                                    </Grid>
+                                </Grid.Column>
+
+
+
+                                <Grid.Column mobile={8} tablet={3} computer={3}>
+                                <Grid centered padded>
+                                    <Grid.Row>
+                                    <div className="click" style={{borderRadius:'20px' }}>
+                                    <div style={{borderRadius:'20px' ,boxShadow:'#baecff 0px 4px 10px'}}>
+                                    <div style={{border: '2px solid #f7f5f5', borderRadius:'14px', padding:'5px'}}>
+                                    <Image src={yao} rounded/>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </Grid.Row>
+
+                                    <Grid.Row>                                        
+                                            <p class="FuturaFont" style={{color:'#ffffff', fontSize:'18px',}}>
+                                            Yao</p>
+                                            
+                                    </Grid.Row>
+
+                                    </Grid>
+                                </Grid.Column>
+
+
+                        </Grid.Row>
+
+                    </Grid>
+
+                </Grid.Column>
+
+                </Grid.Row>
+
+                </Grid>
+
 
             </Fade>
 
