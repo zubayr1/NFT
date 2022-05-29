@@ -39,7 +39,7 @@ function WhiteMint(props) {
         }
         else if (check!==1 && defaultAccount!==null && to!=='' && amount!==0)
         {
-            var value = 0.03*amount;
+            var value = 0.0003*amount;
 
             
             

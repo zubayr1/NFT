@@ -2,14 +2,14 @@ import React, {useState, } from 'react'
 import { Button,  Grid, Message, Image } from 'semantic-ui-react'
 import BaseMint from './BaseMint';
 import Whitelisting from './Whitelisting';
-// import WhiteMint from './Whitemint';
+import WhiteMint from './Whitemint';
 import metal_dodo from '../assets/metal_dodo.PNG'
 
 function Wallet() {
 
     const [whitelistcheck, setWhitelistcheck] = useState(0)
     const [basemintcheck, setBasemintcheck] = useState(0)
-    // const [whitemintcheck, setWhitemintcheck] = useState(0)
+    const [whitemintcheck, setWhitemintcheck] = useState(0)
 
 
 
@@ -64,24 +64,24 @@ function Wallet() {
 
 
 
-    // const whiteminthandler = () =>
-    // {
-    //     setWhitemintcheck((whitemintcheck+1)%2)
-    // }
+    const whiteminthandler = () =>
+    {
+        setWhitemintcheck((whitemintcheck+1)%2)
+    }
 
-    // let whitemintcomponent
+    let whitemintcomponent
 
-    // if(whitemintcheck===1)
-    // {
-    //     whitemintcomponent = <div>
-    //         <WhiteMint dataParentToChild = {defaultAccount}/>
-    //     </div>
-    // }
-    // else{
-    //     whitemintcomponent = <div>
+    if(whitemintcheck===1)
+    {
+        whitemintcomponent = <div>
+            <WhiteMint dataParentToChild = {defaultAccount}/>
+        </div>
+    }
+    else{
+        whitemintcomponent = <div>
             
-    //     </div>
-    // }
+        </div>
+    }
     
 
 
@@ -160,11 +160,11 @@ function Wallet() {
     {whitelistcomponent}
 
 
-    {/* <div style={{marginTop: '20px'}}>
+    <div style={{marginTop: '20px'}}>
             <Button inverted onClick={whiteminthandler}>Go for Sale Mint</Button>
         </div>
 
-    {whitemintcomponent} */}
+    {whitemintcomponent}
 
 
     <div style={{marginTop: '20px'}}>
