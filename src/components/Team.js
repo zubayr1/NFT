@@ -65,7 +65,7 @@ function Team() {
 
                                     <Grid.Row>                                        
                                             <p class="FuturaFont" style={{color:'#ffffff', fontSize:'18px',}}>
-                                            Zakwolf</p>
+                                            Winter</p>
                                     </Grid.Row>
 
                                     <Grid.Row>                                        
