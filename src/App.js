@@ -15,7 +15,7 @@ import Collaborators from './components/Collaborators';
 function App() {
 
  
-  useEffect(() => {
+  useEffect(() => { 
     initializeApp(config);
     
 
